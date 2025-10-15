@@ -83,7 +83,7 @@ export function checkWarning(tokenAddress: string) {
     return null
   }
   switch (WarningCache.checkToken(tokenAddress.toLowerCase())) {
-    case TOKEN_LIST_TYPES.ROLLUX_LIST:
+    case TOKEN_LIST_TYPES.PLASMA_LIST:
       return null
     case TOKEN_LIST_TYPES.UNI_EXTENDED:
       return MediumWarning

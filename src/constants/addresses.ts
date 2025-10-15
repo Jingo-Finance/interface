@@ -9,25 +9,25 @@ type AddressMap = { [chainId: number]: string }
 
 export const PSYS_ADDRESS = '0x48023b16c3e81aa7f6effbdeb35bb83f4f31a8fd'
 export const UNI_ADDRESS: AddressMap = {
-  [SupportedChainId.ROLLUX_TANENBAUM]: '0x817C777DEf2Fd6ffE2492C6CD124985C78Ee9235',
-  [SupportedChainId.ROLLUX]: '0x48023b16c3e81AA7F6eFFbdEB35Bb83f4f31a8fd',
+  [SupportedChainId.PLASMA_TANENBAUM]: '0x817C777DEf2Fd6ffE2492C6CD124985C78Ee9235',
+  [SupportedChainId.PLASMA]: '0x48023b16c3e81AA7F6eFFbdEB35Bb83f4f31a8fd',
 }
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
 // export const V2_FACTORY_ADDRESSES: AddressMap = {
-//   [SupportedChainId.ROLLUX_TANENBAUM]: V2_FACTORY_ADDRESS,
-//   [SupportedChainId.ROLLUX]: '0x14264CD8fb5F95d551C20E07C738a9281737290c',
+//   [SupportedChainId.PLASMA_TANENBAUM]: V2_FACTORY_ADDRESS,
+//   [SupportedChainId.PLASMA]: '0x14264CD8fb5F95d551C20E07C738a9281737290c',
 // }
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
-  [SupportedChainId.ROLLUX_TANENBAUM]: V2_FACTORY_ADDRESS[SupportedChainId.ROLLUX_TANENBAUM],
-  [SupportedChainId.ROLLUX]: V2_FACTORY_ADDRESS[SupportedChainId.ROLLUX],
+  [SupportedChainId.PLASMA_TANENBAUM]: V2_FACTORY_ADDRESS[SupportedChainId.PLASMA_TANENBAUM],
+  [SupportedChainId.PLASMA]: V2_FACTORY_ADDRESS[SupportedChainId.PLASMA],
 }
 
 export const V2_ROUTER_ADDRESS: AddressMap = {
-  [SupportedChainId.ROLLUX_TANENBAUM]: '0x29f7Ad37EC018a9eA97D4b3fEebc573b5635fA84',
-  [SupportedChainId.ROLLUX]: '0x71Eb84560C40094D248DD3542A479A2F0D17DB52',
+  [SupportedChainId.PLASMA_TANENBAUM]: '0x29f7Ad37EC018a9eA97D4b3fEebc573b5635fA84',
+  [SupportedChainId.PLASMA]: '0x71Eb84560C40094D248DD3542A479A2F0D17DB52',
 }
 
 /* V3 Contract Addresses */
@@ -88,13 +88,13 @@ export const GAMMA_UNIPROXY_ADDRESSES: AddressMap = {
 }
 
 // const EMPTY: { [chainId: number]: Token } = {
-//   [ChainId.ROLLUX]: new Token(ChainId.ROLLUX, '0x0000000000000000000000000000000000000000', 0, 'EMPTY', 'EMPTY'),
+//   [ChainId.PLASMA]: new Token(ChainId.PLASMA, '0x0000000000000000000000000000000000000000', 0, 'EMPTY', 'EMPTY'),
 // }
 
 // const FINITE_FARMING: AddressMap = {
-//   [ChainId.ROLLUX]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
+//   [ChainId.PLASMA]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
 // }
 
 // const FARMING_CENTER: AddressMap = {
-//   [ChainId.ROLLUX]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
+//   [ChainId.PLASMA]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
 // }

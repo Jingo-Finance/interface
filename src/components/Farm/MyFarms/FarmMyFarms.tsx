@@ -119,7 +119,7 @@ export default function FarmingMyFarms({ chainId, search }: { search: string; ch
   }, [currentTime])
 
   const allGammaFarms = useMemo(() => {
-    const pairsGroups = GammaPairs[ChainId.ROLLUX]
+    const pairsGroups = GammaPairs[ChainId.PLASMA]
     if (!pairsGroups) {
       return []
     }

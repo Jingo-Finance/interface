@@ -38,7 +38,7 @@ const EmptyState = ({ HeaderContent, SubHeaderContent }: EmptyStateProps) => (
 
 export default function ProposalEmptyState() {
   const { chainId } = useWeb3React()
-  if (chainId && chainId !== SupportedChainId.ROLLUX) {
+  if (chainId && chainId !== SupportedChainId.PLASMA) {
     //TODO: verify this later
     return (
       <EmptyState

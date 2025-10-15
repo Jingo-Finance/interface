@@ -6,7 +6,7 @@ import { isAddress } from 'utils'
 import sysLogo from '../../assets/images/syslogo.png'
 import { NATIVE_CHAIN_ID } from '../../constants/tokens'
 
-type Network = 'rollux' | 'rollux_tanenbaum'
+type Network = 'plasma' | 'rollux_tanenbaum'
 // eslint-disable-next-line import/no-unused-modules
 export function chainIdToNetworkName(networkId: SupportedChainId): Network {
   switch (networkId) {
@@ -14,22 +14,22 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
     // return 'ethereum'
     // case SupportedChainId.ARBITRUM_ONE:
     // return 'arbitrum'
-    case SupportedChainId.ROLLUX:
-      return 'rollux'
-    case SupportedChainId.ROLLUX_TANENBAUM:
+    case SupportedChainId.PLASMA:
+      return 'plasma'
+    case SupportedChainId.PLASMA_TANENBAUM:
       return 'rollux_tanenbaum'
     // case SupportedChainId.POLYGON:
     // return 'polygon'
     // case SupportedChainId.BNB:
     // return 'smartchain'
     default:
-      return 'rollux'
+      return 'plasma'
   }
 }
 
-export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.ROLLUX): string {
+export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.PLASMA): string {
   switch (chainId) {
-    case SupportedChainId.ROLLUX:
+    case SupportedChainId.PLASMA:
       return sysLogo
     default:
       return sysLogo
@@ -37,13 +37,13 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.RO
 }
 
 // TODO: review token log with raw link
-function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.ROLLUX): string | void {
+function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.PLASMA): string | void {
   // const networkName = chainIdToNetworkName(chainId)
   // const networksWithUrls = [
   //   // SupportedChainId.ARBITRUM_ONE,
   //   // SupportedChainId.MAINNET,
-  //   SupportedChainId.ROLLUX,
-  //   SupportedChainId.ROLLUX_TANENBAUM,
+  //   SupportedChainId.PLASMA,
+  //   SupportedChainId.PLASMA_TANENBAUM,
   //   // SupportedChainId.BNB,
   // ]
   return `https://raw.githubusercontent.com/pegasys-fi/default-token-list/master/src/logos/${chainId}/${address}/logo.png`

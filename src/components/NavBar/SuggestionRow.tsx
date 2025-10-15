@@ -94,7 +94,7 @@ export const CollectionRow = ({
       {collection.stats?.floor_price ? (
         <Column className={styles.suggestionSecondaryContainer}>
           <Row gap="4">
-            <Box className={styles.primaryText}>{ethNumberStandardFormatter(collection.stats?.floor_price)} SYS</Box>
+            <Box className={styles.primaryText}>{ethNumberStandardFormatter(collection.stats?.floor_price)} XPL</Box>
           </Row>
           <Box className={styles.secondaryText}>Floor</Box>
         </Column>
@@ -119,13 +119,13 @@ export const TokenRow = ({ token, isHovered, setHoveredIndex, toggleOpen, index,
   const handleClick = useCallback(() => {
     const address =
       !token.address && token.address == '0x4200000000000000000000000000000000000006' ? 'NATIVE' : token.address
-    address && addRecentlySearchedAsset({ address, chain: 'ROLLUX' as Chain })
+    address && addRecentlySearchedAsset({ address, chain: 'PLASMA' as Chain })
 
     toggleOpen()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [addRecentlySearchedAsset, token, toggleOpen, eventProperties])
 
-  const tokenDetailsPath = getTokenDetailsURL({ address: token.address.toLowerCase(), chain: 'ROLLUX' as Chain })
+  const tokenDetailsPath = getTokenDetailsURL({ address: token.address.toLowerCase(), chain: 'PLASMA' as Chain })
   // Close the modal on escape
   useEffect(() => {
     const keyDownHandler = (event: KeyboardEvent) => {

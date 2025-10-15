@@ -5,7 +5,7 @@ import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { ROLLUX_LIST } from './lists'
+import { PLASMA_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms`12s`
 
@@ -51,37 +51,37 @@ type ChainInfoMap = { readonly [chainId: number]: L1ChainInfo | L2ChainInfo } & 
 } & { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
 
 const CHAIN_INFO: ChainInfoMap = {
-  [SupportedChainId.ROLLUX]: {
+  [SupportedChainId.PLASMA]: {
     networkType: NetworkType.L2,
     blockWaitMsBeforeWarning: ms`25m`,
-    bridge: 'http://bridge.rollux.com/',
-    defaultListUrl: ROLLUX_LIST,
-    docs: 'https://rollux.com/',
-    explorer: 'https://explorer.rollux.com/',
+    bridge: 'http://bridge.jingo.finance/',
+    defaultListUrl: PLASMA_LIST,
+    docs: 'https://www.plasma.to/',
+    explorer: 'https://plasmascan.to/',
     infoLink: 'https://info.pegasys.fi/#/',
     label: 'Rollux',
     logoUrl: rolluxLogoUrl,
     // Optimism perfers same icon for both
     circleLogoUrl: rolluxLogoUrl,
-    statusPage: 'https://rollux.com/',
+    statusPage: 'https://www.plasma.to/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
+    nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
     color: darkTheme.chain_570_background,
     backgroundColor: darkTheme.chain_570_background,
   },
-  [SupportedChainId.ROLLUX_TANENBAUM]: {
+  [SupportedChainId.PLASMA_TANENBAUM]: {
     networkType: NetworkType.L2,
     blockWaitMsBeforeWarning: ms`25m`,
-    bridge: 'http://bridge.rollux.com/',
-    defaultListUrl: ROLLUX_LIST,
-    docs: 'https://rollux.com/',
-    explorer: 'https://rollux.tanenbaum.io/',
+    bridge: 'http://bridge.jingo.finance/',
+    defaultListUrl: PLASMA_LIST,
+    docs: 'https://www.plasma.to/',
+    explorer: 'https://plasma.tanenbaum.io/',
     infoLink: 'https://info.pegasys.fi/#/',
-    label: 'Rollux Tanenbaum',
+    label: 'Plasma Tanenbaum',
     logoUrl: rolluxTennenbalLogoUrl,
-    statusPage: 'https://rollux.com/',
+    statusPage: 'https://www.plasma.to/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
+    nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
     color: darkTheme.chain_57000_background,
   },
 }
@@ -108,7 +108,7 @@ export function getChainInfo(chainId: any): any {
   return undefined
 }
 
-const MAINNET_INFO = CHAIN_INFO[SupportedChainId.ROLLUX]
+const MAINNET_INFO = CHAIN_INFO[SupportedChainId.PLASMA]
 export function getChainInfoOrDefault(chainId: number | undefined) {
   return getChainInfo(chainId) ?? MAINNET_INFO
 }

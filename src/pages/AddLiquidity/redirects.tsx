@@ -11,9 +11,9 @@ export function RedirectDuplicateTokenIds() {
 
   // prevent weth + eth
   const isETHOrWETHA =
-    currencyIdA === 'SYS' || (chainId !== undefined && currencyIdA === WRAPPED_NATIVE_CURRENCY[chainId]?.address)
+    currencyIdA === 'XPL' || (chainId !== undefined && currencyIdA === WRAPPED_NATIVE_CURRENCY[chainId]?.address)
   const isETHOrWETHB =
-    currencyIdB === 'SYS' || (chainId !== undefined && currencyIdB === WRAPPED_NATIVE_CURRENCY[chainId]?.address)
+    currencyIdB === 'XPL' || (chainId !== undefined && currencyIdB === WRAPPED_NATIVE_CURRENCY[chainId]?.address)
 
   if (
     currencyIdA &&

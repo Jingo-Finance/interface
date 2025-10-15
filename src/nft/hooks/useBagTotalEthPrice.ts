@@ -30,7 +30,7 @@ export function useBagTotalEthPrice(): BigNumber {
 
 export function useBagTotalUsdPrice(): string | undefined {
   const totalEthPrice = useBagTotalEthPrice()
-  const defaultCurrency = useCurrency('SYS')
+  const defaultCurrency = useCurrency('XPL')
 
   const parsedOutputAmount = useMemo(() => {
     return tryParseCurrencyAmount(formatEther(totalEthPrice.toString()), defaultCurrency ?? undefined)

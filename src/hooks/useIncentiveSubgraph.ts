@@ -490,8 +490,8 @@ export function useFarmingSubgraph() {
   //           const pool = await fetchPool(farming.pool)
   //           const rewardToken = await fetchToken(farming.rewardToken, true)
   //           const bonusRewardToken = await fetchToken(farming.bonusRewardToken, true)
-  //           const wrappedToken0 = getV3TokenFromAddress(pool.token0.id, chainId ?? ChainId.ROLLUX, tokenMap)
-  //           const wrappedToken1 = getV3TokenFromAddress(pool.token1.id, chainId ?? ChainId.ROLLUX, tokenMap)
+  //           const wrappedToken0 = getV3TokenFromAddress(pool.token0.id, chainId ?? ChainId.PLASMA, tokenMap)
+  //           const wrappedToken1 = getV3TokenFromAddress(pool.token1.id, chainId ?? ChainId.PLASMA, tokenMap)
   //           const newPool = {
   //             ...pool,
   //             token0: wrappedToken0 ? wrappedToken0.token : pool.token0,

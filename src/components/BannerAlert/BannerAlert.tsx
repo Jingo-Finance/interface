@@ -28,8 +28,8 @@ const RootWrapper = styled.div`
 `
 
 const SHOULD_SHOW_ALERT = {
-  [SupportedChainId.ROLLUX]: true,
-  [SupportedChainId.ROLLUX_TANENBAUM]: true,
+  [SupportedChainId.PLASMA]: true,
+  [SupportedChainId.PLASMA_TANENBAUM]: true,
 }
 
 type NetworkAlertChains = keyof typeof SHOULD_SHOW_ALERT
@@ -38,15 +38,15 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
   [darkMode in 'dark' | 'light']: { [chainId in NetworkAlertChains]: string }
 } = {
   dark: {
-    [SupportedChainId.ROLLUX]:
+    [SupportedChainId.PLASMA]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
-    [SupportedChainId.ROLLUX_TANENBAUM]:
+    [SupportedChainId.PLASMA_TANENBAUM]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
   },
   light: {
-    [SupportedChainId.ROLLUX]:
+    [SupportedChainId.PLASMA]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
-    [SupportedChainId.ROLLUX_TANENBAUM]:
+    [SupportedChainId.PLASMA_TANENBAUM]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
   },
 }
@@ -98,8 +98,8 @@ const StyledArrowUpRight = styled(ArrowUpRight)`
 `
 
 const TEXT_COLORS: { [chainId in NetworkAlertChains]: string } = {
-  [SupportedChainId.ROLLUX]: 'rgb(255 130 0)',
-  [SupportedChainId.ROLLUX_TANENBAUM]: 'rgb(255 130 0)',
+  [SupportedChainId.PLASMA]: 'rgb(255 130 0)',
+  [SupportedChainId.PLASMA_TANENBAUM]: 'rgb(255 130 0)',
 }
 
 function shouldShowAlert(chainId: number | undefined): chainId is NetworkAlertChains {
@@ -114,7 +114,7 @@ export function BannerAlert() {
     return null
   }
 
-  const isRolluxChain = SupportedChainId.ROLLUX || SupportedChainId.ROLLUX_TANENBAUM
+  const isRolluxChain = SupportedChainId.PLASMA || SupportedChainId.PLASMA_TANENBAUM
   const chainInfo = getChainInfo(chainId)
   if (!chainInfo) return null
 
@@ -127,15 +127,15 @@ export function BannerAlert() {
         darkMode={darkMode}
         logoUrl="https://images.squarespace-cdn.com/content/v1/638a48377c09bb00bbc62b94/019e9ada-f799-47ec-b429-c4b6c5f426ec/coinify_logomark_orange.png?format=1500w"
       >
-        <LinkOutToBridge href="https://trade.coinify.com/syscoin?cryptoCurrencies=SYSROLLUX,SYSEVM,SYS&defaultCryptoCurrency=SYSROLLUX&targetPage=buy">
+        <LinkOutToBridge href="https://trade.coinify.com/Plasma?cryptoCurrencies=SYSPLASMA,SYSEVM,XPL&defaultCryptoCurrency=SYSPLASMA&targetPage=buy">
           <BodyText color={isRolluxChain ? (darkMode ? textColor : black) : textColor}>
             <L2Icon src="https://images.squarespace-cdn.com/content/v1/638a48377c09bb00bbc62b94/019e9ada-f799-47ec-b429-c4b6c5f426ec/coinify_logomark_orange.png?format=1500w" />
             <AutoRow>
               <Header>
-                <Trans>Buy $SYS on Coinify</Trans>
+                <Trans>Buy $XPL on Coinify</Trans>
               </Header>
               <HideSmall>
-                <Trans>With a few clicks you can acquire $SYS on Rollux Network</Trans>
+                <Trans>With a few clicks you can acquire $XPL on Rollux Network</Trans>
               </HideSmall>
             </AutoRow>
           </BodyText>

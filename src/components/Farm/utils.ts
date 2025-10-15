@@ -155,8 +155,8 @@ export const getRewardsAmount = (item: any, rewardsAmount: any) => {
 //   // const gammaData0 = gammaData ? gammaData[farm0.address.toLowerCase()] : undefined
 //   // const gammaData1 = gammaData ? gammaData[farm1.address.toLowerCase()] : undefined
 
-//   // const farm0MasterChefAddress = GAMMA_MASTERCHEF_ADDRESSES[ChainId.ROLLUX].toLowerCase()
-//   // const farm1MasterChefAddress = GAMMA_MASTERCHEF_ADDRESSES[ChainId.ROLLUX].toLowerCase()
+//   // const farm0MasterChefAddress = GAMMA_MASTERCHEF_ADDRESSES[ChainId.PLASMA].toLowerCase()
+//   // const farm1MasterChefAddress = GAMMA_MASTERCHEF_ADDRESSES[ChainId.PLASMA].toLowerCase()
 
 //   // const gammaReward0 = gammaRewards?.[farm0MasterChefAddress]?.['pools']?.[farm0.address.toLowerCase()] ?? undefined
 //   // const gammaReward1 = gammaRewards?.[farm1MasterChefAddress]?.['pools']?.[farm1.address.toLowerCase()] ?? undefined

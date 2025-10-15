@@ -158,7 +158,7 @@ function WrapSummary({ info: { chainId, currencyAmountRaw, unwrapped } }: { info
           decimals={18}
           sigFigs={6}
         />{' '}
-        to {native?.symbol ?? 'SYS'}
+        to {native?.symbol ?? 'XPL'}
       </Trans>
     )
   } else {
@@ -167,7 +167,7 @@ function WrapSummary({ info: { chainId, currencyAmountRaw, unwrapped } }: { info
         Wrap{' '}
         <FormattedCurrencyAmount
           rawAmount={currencyAmountRaw}
-          symbol={native?.symbol ?? 'SYS'}
+          symbol={native?.symbol ?? 'XPL'}
           decimals={18}
           sigFigs={6}
         />{' '}

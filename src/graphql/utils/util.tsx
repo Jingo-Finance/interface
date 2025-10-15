@@ -67,19 +67,19 @@ export type PricePoint = { timestamp: number; value: number }
 // }
 
 export const CHAIN_ID_TO_BACKEND_NAME: { [key: number]: Chain } = {
-  [SupportedChainId.ROLLUX]: 'ROLLUX' as Chain,
-  [SupportedChainId.ROLLUX_TANENBAUM]: 'ROLLUX' as Chain,
+  [SupportedChainId.PLASMA]: 'PLASMA' as Chain,
+  [SupportedChainId.PLASMA_TANENBAUM]: 'PLASMA' as Chain,
 }
 
 export function chainIdToBackendName(chainId: number | undefined) {
   return chainId && CHAIN_ID_TO_BACKEND_NAME[chainId]
     ? CHAIN_ID_TO_BACKEND_NAME[chainId]
-    : CHAIN_ID_TO_BACKEND_NAME[SupportedChainId.ROLLUX]
+    : CHAIN_ID_TO_BACKEND_NAME[SupportedChainId.PLASMA]
 }
 
 const GQL_CHAINS: number[] = [
   // SupportedChainId.MAINNET,
-  SupportedChainId.ROLLUX,
+  SupportedChainId.PLASMA,
   // SupportedChainId.POLYGON,
   // SupportedChainId.ARBITRUM_ONE,
   // SupportedChainId.CELO,
@@ -99,27 +99,27 @@ const URL_CHAIN_PARAM_TO_BACKEND: { [key: string]: Chain } = {
   // polygon: Chain.Polygon,
   // celo: Chain.Celo,
   // arbitrum: Chain.Arbitrum,
-  rollux: 'ROLLUX' as Chain,
+  plasma: 'PLASMA' as Chain,
   // bnb: Chain.Bnb,
 }
 
 export function validateUrlChainParam(chainName: string | undefined) {
   return chainName && URL_CHAIN_PARAM_TO_BACKEND[chainName]
     ? URL_CHAIN_PARAM_TO_BACKEND[chainName]
-    : ('ROLLUX' as Chain)
+    : ('PLASMA' as Chain)
 }
 
 // TODO(cartcrom): refactor into safer lookup & replace usage
 // TODO verify this later
 export const CHAIN_NAME_TO_CHAIN_ID: { [key in string]: ChainId } = {
-  ['ROLLUX' as Chain]: ChainId.ROLLUX,
+  ['PLASMA' as Chain]: ChainId.PLASMA,
 }
 
 export function fromGraphQLChain(chain: Chain): ChainId {
   return CHAIN_NAME_TO_CHAIN_ID[chain]
 }
 
-export const BACKEND_CHAIN_NAMES: Chain[] = ['ROLLUX' as Chain]
+export const BACKEND_CHAIN_NAMES: Chain[] = ['PLASMA' as Chain]
 
 export function getTokenDetailsURL({
   address,
@@ -178,7 +178,7 @@ export function unwrapTokenRollux<
 
 export const getGammaData = async () => {
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/rollux/hypervisors/allData`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/hypervisors/allData`)
     const gammaData = (await data.json()) as { [key: string]: FarmPoolData }
     return gammaData
   } catch (e) {
@@ -186,7 +186,7 @@ export const getGammaData = async () => {
     return null
     // TODO: check backup endpoint with gamma
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/rollux/hypervisors/allData`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/hypervisors/allData`)
     //   const gammaData = await data.json()
     //   return gammaData
     // } catch (e) {
@@ -199,7 +199,7 @@ export const getGammaData = async () => {
 export const getGammaPositions = async (account?: string) => {
   if (!account) return null
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/rollux/user/${account}`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/user/${account}`)
     const positions = (await data.json()) as { [key: string]: InfoAddress }
 
     return positions[account.toLowerCase()]
@@ -207,7 +207,7 @@ export const getGammaPositions = async (account?: string) => {
     console.log(e)
     return null
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/rollux/user/${account}`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/user/${account}`)
     //   const positions = await data.json()
     //   return positions[account.toLowerCase()]
     // } catch (e) {
@@ -219,14 +219,14 @@ export const getGammaPositions = async (account?: string) => {
 
 const getGammaRewards = async () => {
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/rollux/allRewards2`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/allRewards2`)
     const gammaData = await data.json()
     return gammaData
   } catch (e) {
     console.log(e)
     return null
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/rollux/allRewards2`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/allRewards2`)
     //   const gammaData = await data.json()
     //   return gammaData
     // } catch (e) {

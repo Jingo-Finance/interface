@@ -13,7 +13,7 @@ export const MAIN_CARDS = [
   {
     to: '/swap',
     title: 'Swap tokens',
-    description: 'Buy, sell, and explore tokens on Syscoin, Rollux and more.',
+    description: 'Buy, sell, and explore tokens on ETH, BSC and more.',
     cta: 'Trade Tokens',
     darkBackgroundImgSrc: isMobile ? swapCardMobileImgSrc : swapCardImgSrc,
     lightBackgroundImgSrc: isMobile ? swapCardMobileLightImgSrc : swapCardLightImgSrc,

@@ -25,7 +25,7 @@ import { getActivityTitle } from '../constants'
 import { Activity, ActivityMap } from './types'
 
 function getCurrency(currencyId: string, chainId: ChainId, tokens: TokenAddressMap): Currency {
-  if (currencyId === 'SYS') {
+  if (currencyId === 'XPL') {
     return nativeOnChain(chainId)
   }
   const token = tokens[chainId]?.[currencyId]?.token

@@ -171,7 +171,7 @@ function TokenRow(portifolio: NonNullable<TokenDataOwner>) {
   const navigate = useNavigate()
   const toggleWalletDrawer = useToggleAccountDrawer()
   const navigateToTokenDetails = useCallback(async () => {
-    navigate(getTokenDetailsURL({ address: portifolio.token.address.toLowerCase(), chain: 'ROLLUX' as Chain }))
+    navigate(getTokenDetailsURL({ address: portifolio.token.address.toLowerCase(), chain: 'PLASMA' as Chain }))
     toggleWalletDrawer()
   }, [navigate, portifolio.token.address, toggleWalletDrawer])
 

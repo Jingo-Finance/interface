@@ -91,13 +91,13 @@ export function useUnsupportedTokens(): { [address: string]: Token } {
       const bridgeInfo = tokenInfo.extensions?.bridgeInfo as unknown as BridgeInfo
       if (
         bridgeInfo &&
-        bridgeInfo[SupportedChainId.ROLLUX] &&
-        bridgeInfo[SupportedChainId.ROLLUX].tokenAddress &&
-        unsupportedSet.has(bridgeInfo[SupportedChainId.ROLLUX].tokenAddress)
+        bridgeInfo[SupportedChainId.PLASMA] &&
+        bridgeInfo[SupportedChainId.PLASMA].tokenAddress &&
+        unsupportedSet.has(bridgeInfo[SupportedChainId.PLASMA].tokenAddress)
       ) {
-        const address = bridgeInfo[SupportedChainId.ROLLUX].tokenAddress
+        const address = bridgeInfo[SupportedChainId.PLASMA].tokenAddress
         // don't rely on decimals--it's possible that a token could be bridged w/ different decimals on the L2
-        return { ...acc, [address]: new Token(SupportedChainId.ROLLUX, address, tokenInfo.decimals) }
+        return { ...acc, [address]: new Token(SupportedChainId.PLASMA, address, tokenInfo.decimals) }
       }
       return acc
     }, {})

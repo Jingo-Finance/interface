@@ -12,7 +12,7 @@ function getChainId(token?: TokenQueryData | SearchToken | TokenData): ChainId |
   if (token && 'chain' in token) {
     return token?.chain ? CHAIN_NAME_TO_CHAIN_ID[token?.chain] : undefined
   } else {
-    return ChainId.ROLLUX
+    return ChainId.PLASMA
   }
 }
 
@@ -20,7 +20,7 @@ function isNativeToken(token?: TokenQueryData | SearchToken | TokenData): boolea
   if (token && 'address' in token && 'standard' in token) {
     return !token?.address || token?.standard === TokenStandard.Native || token?.address === NATIVE_CHAIN_ID
   } else {
-    // TODO check if token rollux is native token
+    // TODO check if token plasma is native token
     return false
   }
 }

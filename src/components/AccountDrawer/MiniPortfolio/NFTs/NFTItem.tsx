@@ -79,7 +79,7 @@ function NFTDetails({ asset }: { asset: WalletAsset }) {
       </Row>
       <FloorPrice>
         <ThemedText.Caption color="textSecondary">
-          {asset.floorPrice ? `${floorFormatter(asset.floorPrice)} SYS` : ' '}
+          {asset.floorPrice ? `${floorFormatter(asset.floorPrice)} XPL` : ' '}
         </ThemedText.Caption>
       </FloorPrice>
     </Box>

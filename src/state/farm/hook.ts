@@ -64,8 +64,8 @@ import { updateV3Stake } from './actions'
  * An empty result, useful as a default.
  */
 // const EMPTY_LIST: StakingInfoAddressMap = {
-//   [ChainId.ROLLUX]: {},
-//   [ChainId.ROLLUX_TANENBAUM]: {},
+//   [ChainId.PLASMA]: {},
+//   [ChainId.PLASMA_TANENBAUM]: {},
 // }
 
 // const farmCache: WeakMap<FarmListInfo, StakingInfoAddressMap> | null =
@@ -110,10 +110,10 @@ import { updateV3Stake } from './actions'
 //           .map((item) => [item.baseToken, item.tokens[0], item.tokens[1], item.rewardToken])
 //           .flat()
 //           .filter((item) => !!item)
-//           .filter((address) => !tokenMap[ChainId.ROLLUX][address])
+//           .filter((address) => !tokenMap[ChainId.PLASMA][address])
 //           .filter(
 //             (address) =>
-//               !GlobalValue.tokens.COMMON[ChainId.ROLLUX].find(
+//               !GlobalValue.tokens.COMMON[ChainId.PLASMA].find(
 //                 (token) => token.address.toLowerCase() === address.toLowerCase()
 //               )
 //           )
