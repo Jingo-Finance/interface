@@ -2094,7 +2094,7 @@ msgid "Top pools"
 msgstr "Fondos comunes superiores"
 
 #: src/pages/Tokens/index.tsx
-msgid "Top tokens on Pegasys"
+msgid "Top tokens on Jingo"
 msgstr ""
 
 #: src/nft/components/bag/BagFooter.tsx

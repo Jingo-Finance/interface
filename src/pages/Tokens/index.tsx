@@ -82,7 +82,7 @@ const Tokens = () => {
           placement="bottom"
         >
           <ThemedText.LargeHeader>
-            <Trans>Top tokens on Pegasys</Trans>
+            <Trans>Top tokens on Jingo</Trans>
           </ThemedText.LargeHeader>
         </MouseoverTooltip>
       </TitleContainer>

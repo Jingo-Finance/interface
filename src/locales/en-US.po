@@ -2600,8 +2600,8 @@ msgid "Top pools"
 msgstr "Top pools"
 
 #: src/pages/Tokens/index.tsx
-msgid "Top tokens on Pegasys"
-msgstr "Top tokens on Pegasys"
+msgid "Top tokens on Jingo"
+msgstr "Top tokens on Jingo"
 
 #: 
 #~ msgid "Top tokens on Uniswap"
