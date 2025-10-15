@@ -1,4 +1,4 @@
-import { Currency, Field, SwapController, SwapEventHandlers, TradeType } from '@pollum-io/widgets'
+import { Currency, Field, SwapController, SwapEventHandlers, TradeType } from '@jingofi/widgets'
 import { useWeb3React } from '@web3-react/core'
 import CurrencySearchModal from 'components/SearchModal/CurrencySearchModal'
 import { isSupportedChain } from 'constants/chains'
@@ -170,7 +170,7 @@ export function useSyncWidgetInputs({
   return { inputs: { value, ...valueHandlers }, tokenSelector }
 }
 
-// TODO(zzmp): Move to @pollum-io/widgets.
+// TODO(zzmp): Move to @jingofi/widgets.
 function invertField(field: Field) {
   switch (field) {
     case Field.INPUT:
@@ -180,7 +180,7 @@ function invertField(field: Field) {
   }
 }
 
-// TODO(zzmp): Include in @pollum-io/sdk-core (on TradeType, if possible).
+// TODO(zzmp): Include in @jingofi/sdk-core (on TradeType, if possible).
 function invertTradeType(tradeType: TradeType) {
   switch (tradeType) {
     case TradeType.EXACT_INPUT:

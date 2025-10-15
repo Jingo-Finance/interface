@@ -197,7 +197,7 @@ const StyledLink = styled(Link)`
 const HEADER_DESCRIPTIONS: Record<LeaderboardSortMethod, ReactNode | undefined> = {
   [LeaderboardSortMethod.TRADES]: undefined,
   [LeaderboardSortMethod.VOLUME_USDT]: (
-    <Trans>Volume is the amount of the asset that has been traded on Pegasys v3 during the selected time frame.</Trans>
+    <Trans>Volume is the amount of the asset that has been traded on Jingo v3 during the selected time frame.</Trans>
   ),
 }
 

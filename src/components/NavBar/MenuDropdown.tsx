@@ -10,7 +10,7 @@ import {
   DiscordIconMenu,
   EllipsisIcon,
   LightningBoltIcon,
-  PegasysIcon,
+  JingoIcon,
   PoolIcon,
   TwitterIconMenu,
 } from 'nft/components/icons'
@@ -203,7 +203,7 @@ export const MenuDropdown = () => {
                     </PrimaryMenuRow.Text>
                   </Box>
                 </PaliButtonText>
-                <PrimaryMenuRow href="https://info.pegasys.fi/">
+                <PrimaryMenuRow href="https://info.jingo.finance/">
                   <Icon>
                     <BarChartIcon width={24} height={24} color={theme.textPrimary} />
                   </Icon>
@@ -221,9 +221,9 @@ export const MenuDropdown = () => {
                   </PrimaryMenuRow.Text>
                 </PrimaryMenuRow>
 
-                <PrimaryMenuRow href="https://v1.pegasys.fi/">
+                <PrimaryMenuRow href="https://v1.jingo.finance/">
                   <Icon>
-                    <PegasysIcon width={24} height={24} color={theme.textPrimary} />
+                    <JingoIcon width={24} height={24} color={theme.textPrimary} />
                   </Icon>
                   <PrimaryMenuRow.Text>
                     <Trans>Go to V1</Trans>
@@ -241,7 +241,7 @@ export const MenuDropdown = () => {
                 <SecondaryLinkedText href="https://discord.com/invite/UzjWbWWERz">
                   <Trans>Help center</Trans> ↗
                 </SecondaryLinkedText>
-                <SecondaryLinkedText href="https://docs.pegasys.fi/">
+                <SecondaryLinkedText href="https://docs.jingo.finance/">
                   <Trans>Documentation</Trans> ↗
                 </SecondaryLinkedText>
                 <SecondaryLinkedText href="https://discord.com/invite/UzjWbWWERz">

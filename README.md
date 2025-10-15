@@ -1,4 +1,4 @@
-# Pegasys Interface
+# Jingo Interface
 
 [![codecov](https://codecov.io/gh/Uniswap/interface/branch/main/graph/badge.svg?token=YVT2Y86O82)](https://codecov.io/gh/Uniswap/interface)
 
@@ -8,23 +8,21 @@
 [![Release](https://github.com/Uniswap/interface/actions/workflows/release.yaml/badge.svg)](https://github.com/Uniswap/interface/actions/workflows/release.yaml)
 [![Crowdin](https://badges.crowdin.net/uniswap-interface/localized.svg)](https://crowdin.com/project/uniswap-interface)
 
-An open source interface for Pegasys -- a protocol for decentralized exchange of Ethereum tokens.
+An open source interface for Jingo -- a protocol for decentralized exchange of Ethereum tokens.
 
-- Website: [pegasys.fi](https://jingo.finance/)
-- Interface: [app.pegasys.fi](https://app.pegasys.fi)
-- Docs: [pegasys.fi/docs/](https://docs.pegasys.fi/)
-- Twitter: [@Pegasys](https://x.com/JingoFinance)
-- Email: [pegasys@pollum.io](mailto:pegasys@pollum.io)
-- Discord: [Pegasys](https://discord.gg/UzjWbWWERz)
+- Website: [jingo.finance](https://jingo.finance/)
+- Interface: [app.jingo.finance](https://app.jingo.finance)
+- Docs: [jingo.finance/docs/](https://docs.jingo.finance/)
+- Twitter: [@Jingo](https://x.com/JingoFinance)
+- Discord: [Jingo](https://discord.gg/UzjWbWWERz)
 - Litepaper:
-  - [Pegasys](https://jingo.finance/blog/introducing-pegasys/)
   - [UniV3](https://uniswap.org/whitepaper-v3.pdf)
 
-## Accessing the Pegasys Interface
+## Accessing the Jingo Interface
 
-To access the Pegasys Interface, use an IPFS gateway link from the
+To access the Jingo Interface, use an IPFS gateway link from the
 [latest release](https://github.com/Jingo-Finance/interface/releases/latest),
-or visit [app.pegasys.fi](https://app.pegasys.fi).
+or visit [app.jingo.finance](https://app.jingo.finance).
 
 ## Unsupported tokens
 
@@ -67,7 +65,7 @@ Other things to note:
 
 The Jingo Finance Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for Jingo Finance V3.
 
-- Swap on Pegasys V1: <https://v1.pegasys.fi/>
-- View V1 liquidity: <https://app.pegasys.fi/#/pools/v2>
-- Add V1 liquidity: <https://app.pegasys.fi/#/add/v2>
-- Migrate V1 liquidity to V3: <https://app.pegasys.fi/#/migrate/v2>
+- Swap on Jingo V1: <https://v1.jingo.finance/>
+- View V1 liquidity: <https://app.jingo.finance/#/pools/v2>
+- Add V1 liquidity: <https://app.jingo.finance/#/add/v2>
+- Migrate V1 liquidity to V3: <https://app.jingo.finance/#/migrate/v2>

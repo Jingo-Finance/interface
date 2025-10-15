@@ -1,5 +1,5 @@
 // a list of tokens by chain
-import { Currency, Token } from '@pollum-io/sdk-core'
+import { Currency, Token } from '@jingofi/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 
 import { nativeOnChain, USDC_PLASMA, USDT_PLASMA, WBTC_PLASMA, WRAPPED_NATIVE_CURRENCY } from './tokens'

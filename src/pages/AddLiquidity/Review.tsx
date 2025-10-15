@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, Price } from '@pollum-io/sdk-core'
-import { Position } from '@pollum-io/v3-sdk'
+import { Currency, CurrencyAmount, Price } from '@jingofi/sdk-core'
+import { Position } from '@jingofi/v3-sdk'
 import { AutoColumn } from 'components/Column'
 import { PositionPreview } from 'components/PositionPreview'
 import styled from 'styled-components/macro'

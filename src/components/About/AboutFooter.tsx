@@ -3,8 +3,8 @@ import { BREAKPOINTS, ExternalLink, StyledRouterLink } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import { DiscordIcon, GithubIcon, TwitterIcon } from './Icons'
-import lightBlurPegasys from './images/BlurLightPegasysLogo.png'
-import darkBlurPegasys from './images/BlurPegasysLogo.png'
+import lightBlurJingo from './images/BlurLightJingoLogo.png'
+import darkBlurJingo from './images/BlurJingoLogo.png'
 
 const Footer = styled.div`
   display: flex;
@@ -111,7 +111,7 @@ const LogoSectionContent = () => {
   const isDarkMode = useIsDarkMode()
   return (
     <>
-      <StyledLogo src={isDarkMode ? darkBlurPegasys : lightBlurPegasys} alt="Pegasys Logo" />
+      <StyledLogo src={isDarkMode ? darkBlurJingo : lightBlurJingo} alt="Jingo Logo" />
       <SocialLinks>
         <SocialLink href="https://discord.com/invite/UzjWbWWERz" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />

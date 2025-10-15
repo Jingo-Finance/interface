@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount } from '@pollum-io/sdk-core'
+import { Currency, CurrencyAmount } from '@jingofi/sdk-core'
 import { ApprovalState, useApproval } from 'lib/hooks/useApproval'
 import { useCallback } from 'react'
 

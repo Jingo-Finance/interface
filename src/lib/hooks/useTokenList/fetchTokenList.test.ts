@@ -1,4 +1,4 @@
-import defaultTokenList from '@pollum-io/default-token-list'
+import defaultTokenList from '@jingofi/default-token-list'
 import fetch from 'jest-fetch-mock'
 
 import fetchTokenList, { DEFAULT_TOKEN_LIST } from './fetchTokenList'

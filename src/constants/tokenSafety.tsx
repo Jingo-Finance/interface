@@ -5,7 +5,7 @@ import { ZERO_ADDRESS } from './misc'
 import { NATIVE_CHAIN_ID } from './tokens'
 import WarningCache, { TOKEN_LIST_TYPES } from './TokenSafetyLookupTable'
 
-export const TOKEN_SAFETY_ARTICLE = 'https://docs.pegasys.fi/'
+export const TOKEN_SAFETY_ARTICLE = 'https://docs.jingo.finance/'
 
 export enum WARNING_LEVEL {
   MEDIUM,
@@ -32,8 +32,8 @@ export function getWarningCopy(warning: Warning | null, plural = false) {
         heading = (
           <Plural
             value={plural ? 2 : 1}
-            _1="This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys."
-            other="These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys."
+            _1="This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Jingo."
+            other="These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Jingo."
           />
         )
         description = <Trans>Always conduct your own research before trading.</Trans>
@@ -42,8 +42,8 @@ export function getWarningCopy(warning: Warning | null, plural = false) {
         description = (
           <Plural
             value={plural ? 2 : 1}
-            _1="You can't trade this token using the Pegasys App."
-            other="You can't trade these tokens using the Pegasys App."
+            _1="You can't trade this token using the Jingo App."
+            other="You can't trade these tokens using the Jingo App."
           />
         )
         break

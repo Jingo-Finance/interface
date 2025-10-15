@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@pollum-io/sdk-core'
-import { FeeAmount } from '@pollum-io/v3-sdk'
+import { Currency } from '@jingofi/sdk-core'
+import { FeeAmount } from '@jingofi/v3-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { sendEvent } from 'components/analytics'
 import { ButtonGray } from 'components/Button'

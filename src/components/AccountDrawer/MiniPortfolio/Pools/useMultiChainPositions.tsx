@@ -1,15 +1,15 @@
-import { CurrencyAmount, Token } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
-import IPegasysV3PoolStateABI from '@pollum-io/v3-core/artifacts/contracts/interfaces/pool/IPegasysV3PoolState.sol/IPegasysV3PoolState.json'
-import { computePoolAddress, Pool, Position } from '@pollum-io/v3-sdk'
+import { CurrencyAmount, Token } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
+import IJingoV3PoolStateABI from '@jingofi/v3-core/artifacts/contracts/interfaces/pool/IJingoV3PoolState.sol/IJingoV3PoolState.json'
+import { computePoolAddress, Pool, Position } from '@jingofi/v3-sdk'
 import { V3_CORE_FACTORY_ADDRESSES } from 'constants/addresses'
 import { DEFAULT_ERC20_DECIMALS } from 'constants/tokens'
 import { BigNumber } from 'ethers/lib/ethers'
 import { Interface } from 'ethers/lib/utils'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { PositionDetails } from 'types/position'
-import { NonfungiblePositionManager, PegasysInterfaceMulticall } from 'types/v3'
-import { PegasysV3PoolInterface } from 'types/v3/PegasysV3Pool'
+import { NonfungiblePositionManager, JingoInterfaceMulticall } from 'types/v3'
+import { JingoV3PoolInterface } from 'types/v3/JingoV3Pool'
 import { currencyKey } from 'utils/currencyKey'
 
 import { PositionInfo, useCachedPositions, useGetCachedTokens, usePoolAddressCache } from './cache'
@@ -118,8 +118,8 @@ export default function useMultiChainPositions(account: string, chains = DEFAULT
 
   // Combines PositionDetails with Pool data to build our return type
   const fetchPositionInfo = useCallback(
-    async (positionDetails: PositionDetails[], chainId: ChainId, multicall: PegasysInterfaceMulticall) => {
-      const poolInterface = new Interface(IPegasysV3PoolStateABI.abi) as PegasysV3PoolInterface
+    async (positionDetails: PositionDetails[], chainId: ChainId, multicall: JingoInterfaceMulticall) => {
+      const poolInterface = new Interface(IJingoV3PoolStateABI.abi) as JingoV3PoolInterface
       const tokens = await getTokens(
         positionDetails.flatMap((details) => [details.token0, details.token1]),
         chainId

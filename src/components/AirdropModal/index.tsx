@@ -210,7 +210,7 @@ const AirdropModal = () => {
     if (account && provider && contract) {
       ;(async () => {
         try {
-          // TODO: Review this logic when we want to add NFT support to Pegasys
+          // TODO: Review this logic when we want to add NFT support to Jingo
           // const { data } = await CollectionRewardsFetcher(account)
           // const claim = data.find((claim) => claim?.rewardType === Airdrop.GENIE_UNISWAP_USDC_AIRDROP)
           // if (!claim) return

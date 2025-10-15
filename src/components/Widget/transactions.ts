@@ -1,5 +1,5 @@
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, Percent } from '@pollum-io/sdk-core'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, Percent } from '@jingofi/sdk-core'
 import {
   OnTxSuccess,
   TradeType,
@@ -8,7 +8,7 @@ import {
   TransactionInfo,
   TransactionType,
   TransactionType as WidgetTransactionType,
-} from '@pollum-io/widgets'
+} from '@jingofi/widgets'
 import { useWeb3React } from '@web3-react/core'
 import {
   formatPercentInBasisPointsNumber,

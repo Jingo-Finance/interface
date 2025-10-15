@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { ChainId } from '@jingofi/smart-order-router'
 import { formatNumber, NumberType } from '@uniswap/conedison/format'
 import { MouseoverTooltip } from 'components/Tooltip'
 import { ReactNode } from 'react'
@@ -98,7 +98,7 @@ export default function StatsSection(props: StatsSectionProps) {
               value={volume24H}
               description={
                 <Trans>
-                  24H volume is the amount of the asset that has been traded on Pegasys v3 during the past 24 hours.
+                  24H volume is the amount of the asset that has been traded on Jingo v3 during the past 24 hours.
                 </Trans>
               }
               title={<Trans>24H volume</Trans>}

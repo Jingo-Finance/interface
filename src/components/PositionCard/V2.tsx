@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@pollum-io/sdk-core'
-import { Pair } from '@pollum-io/v1-sdk'
+import { CurrencyAmount, Percent, Token } from '@jingofi/sdk-core'
+import { Pair } from '@jingofi/v1-sdk'
 import { useWeb3React } from '@web3-react/core'
 import JSBI from 'jsbi'
 import { useState } from 'react'

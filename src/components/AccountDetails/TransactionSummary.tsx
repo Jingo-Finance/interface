@@ -1,5 +1,5 @@
+import { Fraction, TradeType } from '@jingofi/sdk-core'
 import { Trans } from '@lingui/macro'
-import { Fraction, TradeType } from '@pollum-io/sdk-core'
 import JSBI from 'jsbi'
 
 import { nativeOnChain } from '../../constants/tokens'
@@ -293,7 +293,7 @@ function AddLiquidityV2PoolSummary({
     <Trans>
       Add <FormattedCurrencyAmountManaged rawAmount={expectedAmountBaseRaw} currencyId={baseCurrencyId} sigFigs={3} />{' '}
       and <FormattedCurrencyAmountManaged rawAmount={expectedAmountQuoteRaw} currencyId={quoteCurrencyId} sigFigs={3} />{' '}
-      to Pegasys V2
+      to Jingo V2
     </Trans>
   )
 }

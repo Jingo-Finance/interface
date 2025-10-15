@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Token } from '@pollum-io/sdk-core'
+import { CurrencyAmount, Token } from '@jingofi/sdk-core'
 import { useWeb3React } from '@web3-react/core'
 import LoadingGifLight from 'assets/images/lightLoading.gif'
 import LoadingGif from 'assets/images/loading.gif'
@@ -161,13 +161,13 @@ export default function Landing() {
               <AutoColumn gap="md">
                 <RowBetween>
                   <ThemedText.DeprecatedWhite fontWeight={600}>
-                    <Trans>Pegasys Governance</Trans>
+                    <Trans>Jingo Governance</Trans>
                   </ThemedText.DeprecatedWhite>
                 </RowBetween>
                 <RowBetween>
                   <ThemedText.DeprecatedWhite fontSize={14}>
                     <Trans>
-                      UNI tokens represent voting shares in Pegasys governance. You can vote on each proposal yourself
+                      UNI tokens represent voting shares in Jingo governance. You can vote on each proposal yourself
                       or delegate your votes to a third party.
                     </Trans>
                   </ThemedText.DeprecatedWhite>
@@ -177,11 +177,11 @@ export default function Landing() {
                     color: theme.white,
                     textDecoration: 'underline',
                   }}
-                  href="https://gov.pegasys.fi"
+                  href="https://gov.jingo.finance"
                   target="_blank"
                 >
                   <ThemedText.DeprecatedWhite fontSize={14}>
-                    <Trans>Read more about Pegasys governance</Trans>
+                    <Trans>Read more about Jingo governance</Trans>
                   </ThemedText.DeprecatedWhite>
                 </ExternalLink>
               </AutoColumn>

@@ -58,7 +58,7 @@ const CHAIN_INFO: ChainInfoMap = {
     defaultListUrl: PLASMA_LIST,
     docs: 'https://www.plasma.to/',
     explorer: 'https://plasmascan.to/',
-    infoLink: 'https://info.pegasys.fi/#/',
+    infoLink: 'https://info.jingo.finance/#/',
     label: 'Rollux',
     logoUrl: rolluxLogoUrl,
     // Optimism perfers same icon for both
@@ -76,7 +76,7 @@ const CHAIN_INFO: ChainInfoMap = {
     defaultListUrl: PLASMA_LIST,
     docs: 'https://www.plasma.to/',
     explorer: 'https://plasma.tanenbaum.io/',
-    infoLink: 'https://info.pegasys.fi/#/',
+    infoLink: 'https://info.jingo.finance/#/',
     label: 'Plasma Tanenbaum',
     logoUrl: rolluxTennenbalLogoUrl,
     statusPage: 'https://www.plasma.to/',

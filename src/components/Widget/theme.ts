@@ -1,4 +1,4 @@
-import { Theme } from '@pollum-io/widgets'
+import { Theme } from '@jingofi/widgets'
 import { darkTheme, lightTheme } from 'theme/colors'
 import { Z_INDEX } from 'theme/zIndex'
 

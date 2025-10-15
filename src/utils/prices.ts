@@ -1,7 +1,7 @@
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@pollum-io/sdk-core'
-import { Pair } from '@pollum-io/v1-sdk'
-import { FeeAmount } from '@pollum-io/v3-sdk'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@jingofi/sdk-core'
+import { Pair } from '@jingofi/v1-sdk'
+import { FeeAmount } from '@jingofi/v3-sdk'
 import JSBI from 'jsbi'
 
 import {

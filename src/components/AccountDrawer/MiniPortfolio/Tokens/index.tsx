@@ -1,4 +1,4 @@
-import { Token } from '@pollum-io/sdk-core'
+import { Token } from '@jingofi/sdk-core'
 import { formatNumber, NumberType } from '@uniswap/conedison/format'
 import Row from 'components/Row'
 import { formatDelta } from 'components/Tokens/TokenDetails/PriceChart'
@@ -24,7 +24,7 @@ import PortfolioRow, { PortfolioSkeleton, PortfolioTabWrapper } from '../Portfol
 
 const HIDE_SMALL_USD_BALANCES_THRESHOLD = 1
 
-function meetsThresholdPegasys(tokenBalance: number, hideSmallBalances: boolean) {
+function meetsThresholdJingo(tokenBalance: number, hideSmallBalances: boolean) {
   return !hideSmallBalances || (tokenBalance ?? 0) > HIDE_SMALL_USD_BALANCES_THRESHOLD
 }
 interface TokenDataOwner {
@@ -123,13 +123,13 @@ export default function Tokens({ account }: { account: string }) {
   const visibleTokens = useMemo(() => {
     return !hideSmallBalances
       ? portifolio
-      : portifolio.filter((token) => meetsThresholdPegasys(token.balancePrice, hideSmallBalances))
+      : portifolio.filter((token) => meetsThresholdJingo(token.balancePrice, hideSmallBalances))
   }, [hideSmallBalances, portifolio])
 
   const hiddenTokens = useMemo(() => {
     return !hideSmallBalances
       ? []
-      : portifolio.filter((token) => !meetsThresholdPegasys(token.balancePrice, hideSmallBalances))
+      : portifolio.filter((token) => !meetsThresholdJingo(token.balancePrice, hideSmallBalances))
   }, [hideSmallBalances, portifolio])
 
   if (tokenDataLoading) {
@@ -148,7 +148,7 @@ export default function Tokens({ account }: { account: string }) {
       {visibleTokens.map(
         (tokenBalance) =>
           tokenBalance.token &&
-          meetsThresholdPegasys(tokenBalance.balancePrice, hideSmallBalances) && (
+          meetsThresholdJingo(tokenBalance.balancePrice, hideSmallBalances) && (
             <TokenRow key={tokenBalance.token.address} {...tokenBalance} />
           )
       )}

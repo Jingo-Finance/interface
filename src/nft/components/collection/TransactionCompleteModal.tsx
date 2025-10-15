@@ -4,7 +4,7 @@ import { OpacityHoverState } from 'components/Common'
 import { Box } from 'nft/components/Box'
 import { Portal } from 'nft/components/common/Portal'
 import { Row } from 'nft/components/Flex'
-import { BackArrowIcon, ChevronUpIcon, LightningBoltIcon, PegasysIcon, TwitterIcon } from 'nft/components/icons'
+import { BackArrowIcon, ChevronUpIcon, LightningBoltIcon, JingoIcon, TwitterIcon } from 'nft/components/icons'
 import { Overlay, stopPropagation } from 'nft/components/modals/Overlay'
 import { themeVars, vars } from 'nft/css/sprinkles.css'
 import { useIsMobile, useSendTransaction, useTransactionResponse } from 'nft/hooks'
@@ -105,13 +105,13 @@ const TxCompleteModal = () => {
             {/* Successfully purchased NFTs */}
             {showPurchasedModal && (
               <Box className={styles.successModal} onClick={stopPropagation}>
-                <PegasysIcon color={vars.color.pink400} width="36" height="36" className={styles.uniLogo} />
+                <JingoIcon color={vars.color.pink400} width="36" height="36" className={styles.uniLogo} />
                 <Box display="flex" flexWrap="wrap" width="full" height="min">
                   <h1 className={styles.title}>
                     <Trans>Complete!</Trans>
                   </h1>
                   <p className={styles.subHeading}>
-                    <Trans>Pegasys has granted your wish!</Trans>
+                    <Trans>Jingo has granted your wish!</Trans>
                   </p>
                 </Box>
                 <UploadLink onClick={shareTweet} target="_blank">

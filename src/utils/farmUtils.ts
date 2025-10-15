@@ -1,6 +1,6 @@
 import { TransactionReceipt } from '@ethersproject/providers'
-import { Token } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Token } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import { useWeb3React } from '@web3-react/core'
 import { useCallback, useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'

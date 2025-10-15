@@ -1,11 +1,11 @@
-import { Token } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Token } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import ERC20_ABI from 'abis/erc20.json'
 import { Erc20Interface } from 'abis/types/Erc20'
 import { Erc20Bytes32Interface } from 'abis/types/Erc20Bytes32'
 import { DEFAULT_ERC20_DECIMALS } from 'constants/tokens'
 import { Interface } from 'ethers/lib/utils'
-import { PegasysInterfaceMulticall } from 'types/v3'
+import { JingoInterfaceMulticall } from 'types/v3'
 import { isAddress } from 'utils'
 import { arrayToSlices } from 'utils/arrays'
 import { buildCurrencyKey, CurrencyKey, currencyKey } from 'utils/currencyKey'
@@ -20,7 +20,7 @@ const Erc20Bytes32 = new Interface(ERC20_ABI) as Erc20Bytes32Interface // Used f
 
 // TODO(WEB-3060): cartcrom - adapt support for multi-function multi-interface multicalls into redux-multicall to remove than this custom cache/chunking logic
 // Infura rejects calls with gas costs > 10x the current block gas limit; in such case we split the call into 2 chunks
-async function fetchChunk(multicall: PegasysInterfaceMulticall, chunk: Call[]): Promise<CallResult[]> {
+async function fetchChunk(multicall: JingoInterfaceMulticall, chunk: Call[]): Promise<CallResult[]> {
   try {
     return (await multicall.callStatic.multicall(chunk)).returnData
   } catch (error) {
@@ -91,7 +91,7 @@ const TokenPromiseCache: { [key: CurrencyKey]: Promise<Token | undefined> | unde
 export async function getTokensAsync(
   addresses: string[],
   chainId: ChainId,
-  multicall: PegasysInterfaceMulticall
+  multicall: JingoInterfaceMulticall
 ): Promise<TokenMap> {
   if (addresses.length === 0) return {}
   const formattedAddresses: string[] = []

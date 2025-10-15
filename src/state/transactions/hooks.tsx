@@ -1,6 +1,6 @@
 import type { TransactionResponse } from '@ethersproject/providers'
-import { Token } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Token } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import { useWeb3React } from '@web3-react/core'
 import { ALL_SUPPORTED_CHAIN_IDS } from 'constants/chains'
 import { useCallback, useMemo } from 'react'

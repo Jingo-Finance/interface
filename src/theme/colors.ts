@@ -188,7 +188,7 @@ export const colors = {
   purple800: '#44337A',
   purple900: '#322659',
 
-  // MainColors Pegasys
+  // MainColors Jingo
   purpleVibrantMain: '#8C15E8',
   purpleMain: '#665EE1',
   blueMain: '#3C8BDD',
@@ -267,7 +267,7 @@ export const darkTheme = {
   backgroundBorderGradient: 'linear-gradient(312.16deg, rgba(86, 190, 216, 0.3) 30.76%, rgba(86, 190, 216, 0) 97.76%)',
   backgroundNavbar: opacify(75, colors.black),
   backgroundNavBarButton: colors.deep,
-  rainbowPegasysGradient: 'linear-gradient(90deg, #19EBCE 0%, #8A15E6 84.28%)',
+  rainbowJingoGradient: 'linear-gradient(90deg, #19EBCE 0%, #8A15E6 84.28%)',
   backgroundConnectButton: 'linear-gradient(90deg, #53D9D9 9.38%, rgba(0, 184, 255, 0.1) 128.42%)',
 
   textPrimary: colors.white,
@@ -327,7 +327,7 @@ export const lightTheme: Theme = {
   backgroundBorderGradient: 'linear-gradient(312.16deg, rgba(86, 190, 216, 0.3) 30.76%, rgba(86, 190, 216, 0) 97.76%)',
   backgroundNavbar: opacify(72, colors.deep),
   backgroundNavBarButton: colors.purpleMain,
-  rainbowPegasysGradient: 'linear-gradient(90deg, #19EBCE 0%, #8A15E6 84.28%)',
+  rainbowJingoGradient: 'linear-gradient(90deg, #19EBCE 0%, #8A15E6 84.28%)',
   backgroundConnectButton: 'linear-gradient(90deg, #665EE1 9.38%, rgba(0, 184, 255, 0.3) 128.42%)',
 
   textPrimary: colors.gray900,

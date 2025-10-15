@@ -79,11 +79,11 @@ beforeEach(() => {
 
   // Graphql security policies are based on Origin headers.
   // These are stripped by cypress because chromeWebSecurity === false; this adds them back in.
-  cy.intercept('https://api.pegasys.fi/prod/graphql', (res) => {
+  cy.intercept('https://api.jingo.finance/prod/graphql', (res) => {
     res.headers['origin'] = 'https://localhost:300'
     res.continue()
   })
-  cy.intercept('https://api.pegasys.fi/prod/graphql', (res) => {
+  cy.intercept('https://api.jingo.finance/prod/graphql', (res) => {
     res.headers['origin'] = 'https://localhost:300'
     res.continue()
   })

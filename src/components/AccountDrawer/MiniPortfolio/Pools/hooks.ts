@@ -1,7 +1,7 @@
-import { Token } from '@pollum-io/sdk-core'
-import { AddressMap, ChainId } from '@pollum-io/smart-order-router'
-import MulticallABI from '@pollum-io/v3-periphery/artifacts/contracts/lens/PegasysInterfaceMulticall.sol/PegasysInterfaceMulticall.json'
-import NFTPositionManagerABI from '@pollum-io/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
+import { Token } from '@jingofi/sdk-core'
+import { AddressMap, ChainId } from '@jingofi/smart-order-router'
+import MulticallABI from '@jingofi/v3-periphery/artifacts/contracts/lens/JingoInterfaceMulticall.sol/JingoInterfaceMulticall.json'
+import NFTPositionManagerABI from '@jingofi/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
 import { useWeb3React } from '@web3-react/core'
 import { MULTICALL_ADDRESS, NONFUNGIBLE_POSITION_MANAGER_ADDRESSES as V3NFT_ADDRESSES } from 'constants/addresses'
 import { isSupportedChain } from 'constants/chains'
@@ -11,7 +11,7 @@ import { ContractInput, useUniswapPricesQuery } from 'graphql/data/__generated__
 import { toContractInput } from 'graphql/utils/util'
 import useStablecoinPrice from 'hooks/useStablecoinPrice'
 import { useMemo } from 'react'
-import { NonfungiblePositionManager, PegasysInterfaceMulticall } from 'types/v3'
+import { JingoInterfaceMulticall, NonfungiblePositionManager } from 'types/v3'
 import { getContract } from 'utils'
 import { CurrencyKey, currencyKey } from 'utils/currencyKey'
 
@@ -46,8 +46,8 @@ export function useV3ManagerContracts(chainIds: ChainId[]): ContractMap<Nonfungi
   return useContractMultichain<NonfungiblePositionManager>(V3NFT_ADDRESSES, NFTPositionManagerABI.abi, chainIds)
 }
 
-export function useInterfaceMulticallContracts(chainIds: ChainId[]): ContractMap<PegasysInterfaceMulticall> {
-  return useContractMultichain<PegasysInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI.abi, chainIds)
+export function useInterfaceMulticallContracts(chainIds: ChainId[]): ContractMap<JingoInterfaceMulticall> {
+  return useContractMultichain<JingoInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI.abi, chainIds)
 }
 
 type PriceMap = { [key: CurrencyKey]: number | undefined }

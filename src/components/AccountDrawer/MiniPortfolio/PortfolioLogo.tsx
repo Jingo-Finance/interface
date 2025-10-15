@@ -1,5 +1,5 @@
-import { Currency } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Currency } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import LoadingGifLight from 'assets/images/lightLoading.gif'
 import LoadingGif from 'assets/images/loading.gif'
 import blankTokenUrl from 'assets/svg/blank_token.svg'

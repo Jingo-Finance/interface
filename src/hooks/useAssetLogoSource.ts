@@ -42,8 +42,8 @@ export function getInitialUrl(address?: string | null, chainId?: number | null, 
   const checksummedAddress = isAddress(address)
   // TODO: review check raw
   if (checksummedAddress) {
-    // return `https://raw.githubusercontent.com/pegasys-fi/pegasys-tokenlists/master/${chainId}/${checksummedAddress}/logo.png`
-    return `https://raw.githubusercontent.com/pegasys-fi/default-token-list/master/src/logos/${chainId}/${checksummedAddress}/logo.png`
+    // return `https://raw.githubusercontent.com/jingo-fi/jingo-tokenlists/master/${chainId}/${checksummedAddress}/logo.png`
+    return `https://raw.githubusercontent.com/jingo-fi/default-token-list/master/src/logos/${chainId}/${checksummedAddress}/logo.png`
   } else {
     return undefined
   }

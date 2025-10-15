@@ -1,5 +1,5 @@
 import { gql, useQuery } from '@apollo/client'
-import { SupportedChainId } from '@pollum-io/widgets'
+import { SupportedChainId } from '@jingofi/widgets'
 import { useMemo } from 'react'
 
 import { apolloClient } from '../thegraph/apollo'

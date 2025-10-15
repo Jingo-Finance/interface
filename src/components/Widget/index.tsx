@@ -1,5 +1,5 @@
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, TradeType } from '@pollum-io/sdk-core'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, TradeType } from '@jingofi/sdk-core'
 import {
   AddEthereumChainParameter,
   DialogAnimationType,
@@ -7,7 +7,7 @@ import {
   OnReviewSwapClick,
   SwapWidget,
   SwapWidgetSkeleton,
-} from '@pollum-io/widgets'
+} from '@jingofi/widgets'
 import { useWeb3React } from '@web3-react/core'
 import { useToggleAccountDrawer } from 'components/AccountDrawer'
 import { useActiveLocale } from 'hooks/useActiveLocale'
@@ -31,7 +31,7 @@ import { useSyncWidgetTransactions } from './transactions'
 
 export const DEFAULT_WIDGET_WIDTH = 360
 
-const WIDGET_ROUTER_URL = 'https://api.pegasys.fi/prod/'
+const WIDGET_ROUTER_URL = 'https://api.jingo.finance/prod/'
 
 function useWidgetTheme() {
   return useIsDarkMode() ? DARK_THEME : LIGHT_THEME

@@ -72,7 +72,7 @@ export default function CTACards() {
 
   return (
     <CTASection>
-      <CTA href="https://docs.pegasys.fi/sdk/v3/guides/liquidity/minting">
+      <CTA href="https://docs.jingo.finance/sdk/v3/guides/liquidity/minting">
         <ResponsiveColumn>
           <HeaderText>
             <Trans>Learn about providing liquidity</Trans> ↗
@@ -88,7 +88,7 @@ export default function CTACards() {
             <Trans>Top pools</Trans> ↗
           </HeaderText>
           <ThemedText.DeprecatedBody fontWeight={400} style={{ alignSelf: 'flex-start' }}>
-            <Trans>Explore Pegasys Analytics.</Trans>
+            <Trans>Explore Jingo Analytics.</Trans>
           </ThemedText.DeprecatedBody>
         </ResponsiveColumn>
       </CTA>

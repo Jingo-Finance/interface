@@ -1,4 +1,4 @@
-import { Percent } from '@pollum-io/sdk-core'
+import { Percent } from '@jingofi/sdk-core'
 
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../constants/misc'
 

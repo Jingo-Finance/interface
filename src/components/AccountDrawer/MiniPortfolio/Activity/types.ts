@@ -1,5 +1,5 @@
-import { Currency } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Currency } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import { AssetActivityPartsFragment, TransactionStatus } from 'graphql/data/__generated__/types-and-hooks'
 
 type Receipt = AssetActivityPartsFragment['transaction']

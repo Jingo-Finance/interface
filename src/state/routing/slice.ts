@@ -1,5 +1,5 @@
-import { Protocol } from '@pollum-io/router-sdk'
-import { AlphaRouter, ChainId } from '@pollum-io/smart-order-router'
+import { Protocol } from '@jingofi/router-sdk'
+import { AlphaRouter, ChainId } from '@jingofi/smart-order-router'
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
 import { RPC_PROVIDERS } from 'constants/providers'
 import { getClientSideQuote, toSupportedChainId } from 'lib/hooks/routing/clientSideSmartOrderRouter'
@@ -82,7 +82,7 @@ interface GetQuoteArgs {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'api.pegasys.fi/prod',
+    baseUrl: 'api.jingo.finance/prod',
   }),
   endpoints: (build) => ({
     getQuote: build.query<GetQuoteResult, GetQuoteArgs>({
@@ -129,7 +129,7 @@ export const routingApi = createApi({
               amount,
               type,
             })
-            return (await fetch(`https://api.pegasys.fi/prod/quote?${query}`)) as { data: GetQuoteResult } | { error: FetchBaseQueryError }
+            return (await fetch(`https://api.jingo.finance/prod/quote?${query}`)) as { data: GetQuoteResult } | { error: FetchBaseQueryError }
           } else {
             const router = getRouter(args.tokenInChainId)
             return await getClientSideQuote(

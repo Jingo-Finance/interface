@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent } from '@pollum-io/sdk-core'
-import { Pair } from '@pollum-io/v1-sdk'
+import { Currency, CurrencyAmount, Percent } from '@jingofi/sdk-core'
+import { Pair } from '@jingofi/v1-sdk'
 import { useWeb3React } from '@web3-react/core'
 import { AutoColumn } from 'components/Column'
 import { LoadingOpacityContainer, loadingOpacityMixin } from 'components/Loader/styled'

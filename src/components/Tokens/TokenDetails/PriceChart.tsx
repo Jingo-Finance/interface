@@ -143,7 +143,7 @@ export function PriceChart({ width, height, prices: originalPrices, timePeriod }
   const missingPricesMessage = !chartAvailable ? (
     prices?.length === 0 ? (
       <>
-        <Trans>Missing price data due to recently low trading volume on Pegasys v3</Trans>
+        <Trans>Missing price data due to recently low trading volume on Jingo v3</Trans>
       </>
     ) : (
       <Trans>Missing chart data</Trans>

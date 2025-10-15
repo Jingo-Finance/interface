@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, Percent, TradeType } from '@pollum-io/sdk-core'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, Percent, TradeType } from '@jingofi/sdk-core'
 import { ReactNode, useCallback, useMemo, useState } from 'react'
 import { InterfaceTrade } from 'state/routing/types'
 import { tradeMeaningfullyDiffers } from 'utils/tradeMeaningFullyDiffer'

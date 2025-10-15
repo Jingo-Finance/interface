@@ -1,4 +1,4 @@
-import { ChainId } from '@pollum-io/smart-order-router'
+import { ChainId } from '@jingofi/smart-order-router'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { TokenStandard } from 'graphql/data/__generated__/types-and-hooks'
 import { SearchToken } from 'graphql/data/SearchTokens'
@@ -34,7 +34,7 @@ export default function QueryTokenLogo(
   const isNative = isNativeToken(token)
 
   const address = token && 'address' in token ? token.address : token && 'id' in token ? token.id : undefined
-  const backupImg = `https://raw.githubusercontent.com/pegasys-fi/default-token-list/master/src/logos/${chainId}/${address}/logo.png`
+  const backupImg = `https://raw.githubusercontent.com/jingo-fi/default-token-list/master/src/logos/${chainId}/${address}/logo.png`
 
   return (
     <AssetLogo

@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@pollum-io/sdk-core'
+import { Currency } from '@jingofi/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import { useMemo, useRef } from 'react'
@@ -85,7 +85,7 @@ export default function ShareButton({ currency }: { currency: Currency }) {
   const shareTweet = () => {
     toggleShare()
     window.open(
-      `https://twitter.com/intent/tweet?text=Check%20out%20${currency.name}%20(${currency.symbol})%20https://app.pegasys.fi/%23/tokens/${currency.chainId}/${address}%20via%20@PegasysDEX`,
+      `https://twitter.com/intent/tweet?text=Check%20out%20${currency.name}%20(${currency.symbol})%20https://app.jingo.finance/%23/tokens/${currency.chainId}/${address}%20via%20@JingoDEX`,
       'newwindow',
       `left=${positionX}, top=${positionY}, width=${TWITTER_WIDTH}, height=${TWITTER_HEIGHT}`
     )

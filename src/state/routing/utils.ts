@@ -1,7 +1,7 @@
-import { MixedRouteSDK, Protocol } from '@pollum-io/router-sdk'
-import { Currency, CurrencyAmount, Token, TradeType } from '@pollum-io/sdk-core'
-import { Pair, Route as V2Route } from '@pollum-io/v1-sdk'
-import { FeeAmount, Pool, Route as V3Route } from '@pollum-io/v3-sdk'
+import { MixedRouteSDK, Protocol } from '@jingofi/router-sdk'
+import { Currency, CurrencyAmount, Token, TradeType } from '@jingofi/sdk-core'
+import { Pair, Route as V2Route } from '@jingofi/v1-sdk'
+import { FeeAmount, Pool, Route as V3Route } from '@jingofi/v3-sdk'
 
 import { GetQuoteResult, InterfaceTrade, V2PoolInRoute, V3PoolInRoute } from './types'
 

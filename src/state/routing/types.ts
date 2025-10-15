@@ -1,7 +1,7 @@
-import { MixedRouteSDK, Trade } from '@pollum-io/router-sdk'
-import { Currency, CurrencyAmount, Token, TradeType } from '@pollum-io/sdk-core'
-import { Route as V2Route } from '@pollum-io/v1-sdk'
-import { Route as V3Route } from '@pollum-io/v3-sdk'
+import { MixedRouteSDK, Trade } from '@jingofi/router-sdk'
+import { Currency, CurrencyAmount, Token, TradeType } from '@jingofi/sdk-core'
+import { Route as V2Route } from '@jingofi/v1-sdk'
+import { Route as V3Route } from '@jingofi/v3-sdk'
 
 export enum TradeState {
   LOADING,

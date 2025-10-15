@@ -55,12 +55,12 @@ const StyledRangeInput = styled.input<{ size: number }>`
   }
 
   &::-webkit-slider-runnable-track {
-    background: ${({ theme }) => theme.rainbowPegasysGradient};
+    background: ${({ theme }) => theme.rainbowJingoGradient};
     height: 2px;
   }
 
   &::-moz-range-track {
-    background: ${({ theme }) => theme.rainbowPegasysGradient};
+    background: ${({ theme }) => theme.rainbowJingoGradient};
     height: 2px;
   }
 
@@ -69,14 +69,14 @@ const StyledRangeInput = styled.input<{ size: number }>`
     border-color: transparent;
     color: transparent;
 
-    background: ${({ theme }) => theme.rainbowPegasysGradient};
+    background: ${({ theme }) => theme.rainbowJingoGradient};
     height: 2px;
   }
   &::-ms-fill-lower {
-    background: ${({ theme }) => theme.rainbowPegasysGradient};
+    background: ${({ theme }) => theme.rainbowJingoGradient};
   }
   &::-ms-fill-upper {
-    background: ${({ theme }) => theme.rainbowPegasysGradient};
+    background: ${({ theme }) => theme.rainbowJingoGradient};
   }
 `
 

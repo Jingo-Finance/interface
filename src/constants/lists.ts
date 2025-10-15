@@ -1,5 +1,5 @@
 export const PLASMA_LIST =
-  'https://raw.githubusercontent.com/pegasys-fi/default-token-list/main/build/pegasys-default.tokenlist.json'
+  'https://raw.githubusercontent.com/jingo-fi/default-token-list/main/build/jingo-default.tokenlist.json'
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 

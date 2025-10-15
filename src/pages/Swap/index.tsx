@@ -1,7 +1,7 @@
 import { Trans } from '@lingui/macro'
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@pollum-io/sdk-core'
-import { UNIVERSAL_ROUTER_ADDRESS } from '@pollum-io/universal-router-sdk'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, CurrencyAmount, Percent, Token, TradeType } from '@jingofi/sdk-core'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@jingofi/universal-router-sdk'
 import { useWeb3React } from '@web3-react/core'
 import LoadingGifLight from 'assets/images/lightLoading.gif'
 import LoadingGif from 'assets/images/loading.gif'
@@ -634,7 +634,7 @@ export default function Swap({ className }: { className?: string }) {
                           <MouseoverTooltip
                             text={
                               <Trans>
-                                Permission is required for Pegasys to swap each token. This will expire after one month
+                                Permission is required for Jingo to swap each token. This will expire after one month
                                 for your security.
                               </Trans>
                             }

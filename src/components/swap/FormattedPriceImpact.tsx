@@ -1,4 +1,4 @@
-import { Percent } from '@pollum-io/sdk-core'
+import { Percent } from '@jingofi/sdk-core'
 
 import { warningSeverity } from '../../utils/prices'
 import { ErrorText } from './styleds'

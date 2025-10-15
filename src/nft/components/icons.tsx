@@ -1,13 +1,13 @@
 import React from 'react'
 import styled, { useTheme } from 'styled-components/macro'
 
-// import { LighttPegasysLogo } from '../../../public/icons/LighttPegasysLogo.svg'
+// import { LighttJingoLogo } from '../../../public/icons/LighttJingoLogo.svg'
 import { themeVars, vars } from '../css/sprinkles.css'
 
 // ESLint reports `fill` is missing, whereas it exists on an SVGProps type
 type SVGProps = React.SVGProps<SVGSVGElement> & { fill?: string; height?: string | number; width?: string | number }
 
-export const PegasysIcon = (props: SVGProps) => (
+export const JingoIcon = (props: SVGProps) => (
   <svg width="86" height="99" viewBox="0 0 86 99" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="M63.579 59.1599C67.639 61.5049 72.749 64.2699 73.484 69.6249C78.839 68.1899 86.784 66.5099 84.754 61.7499C82.234 50.8299 76.389 41.1349 72.084 30.8099C71.769 30.0749 71.524 29.2349 71.384 28.4649C70.859 25.6999 71.874 23.0749 72.119 20.2399C71.069 20.3799 66.484 20.3799 63.894 23.5999C63.824 23.7049 63.299 20.4149 65.049 16.9149C62.144 16.0399 39.464 25.9449 31.869 45.5799C31.694 41.0649 33.514 33.3299 39.744 24.7199C49.369 11.3849 65.014 9.63491 75.129 11.9799C73.379 11.2099 73.134 10.7199 69.109 9.31991C66.764 8.47991 63.334 7.81491 61.794 7.81491C34.144 7.70991 16.224 24.0549 14.754 52.8599C13.634 74.7699 37.364 89.4699 62.284 89.5399C70.894 89.5749 76.564 85.6899 81.219 82.1549C55.774 78.5149 43.944 70.1849 55.704 47.9599C54.409 50.4449 56.054 54.8199 63.579 59.1599ZM68.409 35.1499C68.444 35.1849 68.444 35.2199 68.479 35.2549C68.479 35.2199 68.514 35.2199 68.514 35.1849C70.719 39.6999 72.749 43.8299 74.779 47.9599C74.044 47.6799 73.344 47.3649 72.679 47.0149C67.569 44.2849 65.434 38.9299 68.409 35.1499Z"

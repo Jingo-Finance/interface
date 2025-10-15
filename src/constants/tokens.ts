@@ -1,4 +1,4 @@
-import { Ether, NativeCurrency, Token, WETH9 } from '@pollum-io/sdk-core'
+import { Ether, NativeCurrency, Token, WETH9 } from '@jingofi/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 
 import { UNI_ADDRESS } from './addresses'
@@ -52,14 +52,14 @@ export const UNI: { [chainId: number]: Token } = {
     UNI_ADDRESS[SupportedChainId.PLASMA],
     18,
     'PSYS',
-    'Pegasys'
+    'Jingo'
   ),
   [SupportedChainId.PLASMA_TANENBAUM]: new Token(
     SupportedChainId.PLASMA_TANENBAUM,
     UNI_ADDRESS[SupportedChainId.PLASMA_TANENBAUM],
     18,
     'PSYS',
-    'Pegasys'
+    'Jingo'
   ),
 }
 

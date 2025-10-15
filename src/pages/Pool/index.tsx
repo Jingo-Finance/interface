@@ -239,7 +239,7 @@ export default function Pool() {
           <BookOpen size={16} />
         </PoolMenuItem>
       ),
-      link: 'https://docs.pegasys.fi/sdk/v3/guides/liquidity/minting',
+      link: 'https://docs.jingo.finance/sdk/v3/guides/liquidity/minting',
       external: true,
     },
   ]

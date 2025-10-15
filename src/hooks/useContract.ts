@@ -1,13 +1,13 @@
 import { Contract } from '@ethersproject/contracts'
-import IPegasysPairJson from '@pollum-io/pegasys-protocol/artifacts/contracts/pegasys-core/interfaces/IPegasysPair.sol/IPegasysPair.json'
-import IPegasysRouterJson from '@pollum-io/pegasys-protocol/artifacts/contracts/pegasys-periphery/interfaces/IPegasysRouter.sol/IPegasysRouter.json'
-import { ChainId } from '@pollum-io/smart-order-router'
-import QuoterV2Json from '@pollum-io/swap-router-contracts/artifacts/contracts/lens/QuoterV2.sol/QuoterV2.json'
-import PegasysInterfaceMulticallJson from '@pollum-io/v3-periphery/artifacts/contracts/lens/PegasysInterfaceMulticall.sol/PegasysInterfaceMulticall.json'
-import QuoterJson from '@pollum-io/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
-import TickLensJson from '@pollum-io/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
-import NonfungiblePositionManagerJson from '@pollum-io/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
-import V3MigratorJson from '@pollum-io/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
+import IJingoPairJson from '@jingofi/jingo-protocol/artifacts/contracts/jingo-core/interfaces/IJingoPair.sol/IJingoPair.json'
+import IJingoRouterJson from '@jingofi/jingo-protocol/artifacts/contracts/jingo-periphery/interfaces/IJingoRouter.sol/IJingoRouter.json'
+import { ChainId } from '@jingofi/smart-order-router'
+import QuoterV2Json from '@jingofi/swap-router-contracts/artifacts/contracts/lens/QuoterV2.sol/QuoterV2.json'
+import JingoInterfaceMulticallJson from '@jingofi/v3-periphery/artifacts/contracts/lens/JingoInterfaceMulticall.sol/JingoInterfaceMulticall.json'
+import QuoterJson from '@jingofi/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
+import TickLensJson from '@jingofi/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
+import NonfungiblePositionManagerJson from '@jingofi/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
+import V3MigratorJson from '@jingofi/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
 import { useWeb3React } from '@web3-react/core'
 import ARGENT_WALLET_DETECTOR_ABI from 'abis/argent-wallet-detector.json'
 import EIP_2612 from 'abis/eip_2612.json'
@@ -33,7 +33,7 @@ import {
 } from 'constants/addresses'
 import { WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import { useMemo } from 'react'
-import { NonfungiblePositionManager, PegasysInterfaceMulticall, Quoter, QuoterV2, TickLens } from 'types/v3'
+import { NonfungiblePositionManager, JingoInterfaceMulticall, Quoter, QuoterV2, TickLens } from 'types/v3'
 import { V3Migrator } from 'types/v3/V3Migrator'
 
 import GammaPairABI from '../abis/gamma-hypervisor.json'
@@ -41,12 +41,12 @@ import GammaMasterChef from '../abis/gamma-masterchef.json'
 import GammaUniProxyABI from '../abis/gamma-uniorixy.json'
 import { getContract } from '../utils'
 
-const { abi: IUniswapV2PairABI } = IPegasysPairJson
-const { abi: IUniswapV2Router02ABI } = IPegasysRouterJson
+const { abi: IUniswapV2PairABI } = IJingoPairJson
+const { abi: IUniswapV2Router02ABI } = IJingoRouterJson
 const { abi: QuoterABI } = QuoterJson
 const { abi: QuoterV2ABI } = QuoterV2Json
 const { abi: TickLensABI } = TickLensJson
-const { abi: MulticallABI } = PegasysInterfaceMulticallJson
+const { abi: MulticallABI } = JingoInterfaceMulticallJson
 const { abi: NFTPositionManagerABI } = NonfungiblePositionManagerJson
 const { abi: V2MigratorABI } = V3MigratorJson
 
@@ -151,7 +151,7 @@ export function useV2RouterContract(): Contract | null {
 }
 
 export function useInterfaceMulticall() {
-  return useContract<PegasysInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as PegasysInterfaceMulticall
+  return useContract<JingoInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as JingoInterfaceMulticall
 }
 
 export function useV3NFTPositionManagerContract(withSignerIfPossible?: boolean): NonfungiblePositionManager | null {

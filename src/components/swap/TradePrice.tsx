@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Price } from '@pollum-io/sdk-core'
+import { Currency, Price } from '@jingofi/sdk-core'
 import { formatNumber, NumberType } from '@uniswap/conedison/format'
 import { useUSDPrice } from 'hooks/useUSDPrice'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'

@@ -1,5 +1,5 @@
-import { Currency } from '@pollum-io/sdk-core'
-import { ChainId } from '@pollum-io/smart-order-router'
+import { Currency } from '@jingofi/sdk-core'
+import { ChainId } from '@jingofi/smart-order-router'
 import { FarmPoolData, InfoAddress } from 'components/Farm/constants'
 import { SupportedChainId } from 'constants/chains'
 import { NATIVE_CHAIN_ID, nativeOnChain, WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
@@ -178,7 +178,7 @@ export function unwrapTokenRollux<
 
 export const getGammaData = async () => {
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/hypervisors/allData`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/jingo/plasma/hypervisors/allData`)
     const gammaData = (await data.json()) as { [key: string]: FarmPoolData }
     return gammaData
   } catch (e) {
@@ -186,7 +186,7 @@ export const getGammaData = async () => {
     return null
     // TODO: check backup endpoint with gamma
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/hypervisors/allData`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/jingo/plasma/hypervisors/allData`)
     //   const gammaData = await data.json()
     //   return gammaData
     // } catch (e) {
@@ -199,7 +199,7 @@ export const getGammaData = async () => {
 export const getGammaPositions = async (account?: string) => {
   if (!account) return null
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/user/${account}`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/jingo/plasma/user/${account}`)
     const positions = (await data.json()) as { [key: string]: InfoAddress }
 
     return positions[account.toLowerCase()]
@@ -207,7 +207,7 @@ export const getGammaPositions = async (account?: string) => {
     console.log(e)
     return null
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/user/${account}`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/jingo/plasma/user/${account}`)
     //   const positions = await data.json()
     //   return positions[account.toLowerCase()]
     // } catch (e) {
@@ -219,14 +219,14 @@ export const getGammaPositions = async (account?: string) => {
 
 const getGammaRewards = async () => {
   try {
-    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/pegasys/plasma/allRewards2`)
+    const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT}/jingo/plasma/allRewards2`)
     const gammaData = await data.json()
     return gammaData
   } catch (e) {
     console.log(e)
     return null
     // try {
-    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/pegasys/plasma/allRewards2`)
+    //   const data = await fetch(`${process.env.REACT_APP_GAMMA_API_ENDPOINT_BACKUP}/jingo/plasma/allRewards2`)
     //   const gammaData = await data.json()
     //   return gammaData
     // } catch (e) {

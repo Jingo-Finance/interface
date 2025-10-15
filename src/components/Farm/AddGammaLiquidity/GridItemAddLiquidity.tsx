@@ -100,7 +100,7 @@ export function GridItemAddLiquidity({
                   style={{ height: 'auto', display: 'flex' }}
                   text={
                     <Trans>
-                      Permission is required for Pegasys farm to swap each token. This will expire after one month for
+                      Permission is required for Jingo farm to swap each token. This will expire after one month for
                       your security.
                     </Trans>
                   }

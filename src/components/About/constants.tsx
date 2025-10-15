@@ -22,7 +22,7 @@ export const MAIN_CARDS = [
   {
     to: '/pools',
     title: 'Earn',
-    description: 'Provide liquidity to pools on Pegasys and earn fees on swaps.',
+    description: 'Provide liquidity to pools on Jingo and earn fees on swaps.',
     cta: 'Provide liquidity',
     darkBackgroundImgSrc: isMobile ? BannerMobilePools : BannerPools,
     lightBackgroundImgSrc: isMobile ? BannerMobileLightPools : BannerLightPools,

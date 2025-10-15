@@ -55,12 +55,12 @@ msgid "24H volume"
 msgstr "24H volume"
 
 #: src/components/Tokens/TokenDetails/StatsSection.tsx
-msgid "24H volume is the amount of the asset that has been traded on Pegasys v3 during the past 24 hours."
-msgstr "24H volume is the amount of the asset that has been traded on Pegasys v3 during the past 24 hours."
+msgid "24H volume is the amount of the asset that has been traded on Jingo v3 during the past 24 hours."
+msgstr "24H volume is the amount of the asset that has been traded on Jingo v3 during the past 24 hours."
 
 #: 
-#~ msgid "24H volume is the amount of the asset that has been traded on PegasysV2 during the past 24 hours."
-#~ msgstr "24H volume is the amount of the asset that has been traded on PegasysV2 during the past 24 hours."
+#~ msgid "24H volume is the amount of the asset that has been traded on JingoV2 during the past 24 hours."
+#~ msgstr "24H volume is the amount of the asset that has been traded on JingoV2 during the past 24 hours."
 
 #: 
 #~ msgid "24H volume is the amount of the asset that has been traded on Uniswap v3 during the past 24 hours."
@@ -166,8 +166,8 @@ msgid "Add <0/> and <1/> to Pegasy V3"
 msgstr "Add <0/> and <1/> to Pegasy V3"
 
 #: 
-#~ msgid "Add <0/> and <1/> to Pegasys"
-#~ msgstr "Add <0/> and <1/> to Pegasys"
+#~ msgid "Add <0/> and <1/> to Jingo"
+#~ msgstr "Add <0/> and <1/> to Jingo"
 
 #: 
 #~ msgid "Add <0/> and <1/> to Uniswap V2"
@@ -284,12 +284,12 @@ msgid "An error occurred loading tokens. Please try again."
 msgstr "An error occurred loading tokens. Please try again."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
-msgstr "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
+msgstr "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
 
 #: 
-#~ msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
-#~ msgstr "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
+#~ msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
+#~ msgstr "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
 
 #: 
 #~ msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
@@ -918,8 +918,8 @@ msgstr "Download in the App Store to safely store your tokens and NFTs, swap tok
 #~ msgstr "ETH Registrar Controller"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned PSYS tokens represent voting shares in Pegasys governance."
-msgstr "Earned PSYS tokens represent voting shares in Pegasys governance."
+msgid "Earned PSYS tokens represent voting shares in Jingo governance."
+msgstr "Earned PSYS tokens represent voting shares in Jingo governance."
 
 #: 
 #~ msgid "Earned UNI tokens represent voting shares in Uniswap governance."
@@ -1050,8 +1050,8 @@ msgid "Explore NFTs"
 msgstr "Explore NFTs"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Pegasys Analytics."
-msgstr "Explore Pegasys Analytics."
+msgid "Explore Jingo Analytics."
+msgstr "Explore Jingo Analytics."
 
 #: 
 #~ msgid "Explore Uniswap Analytics."
@@ -1119,12 +1119,12 @@ msgid "For"
 msgstr "For"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Pegasys V1 and deposit it into Pegasys V3."
-msgstr "For each pool shown below, click migrate to remove your liquidity from Pegasys V1 and deposit it into Pegasys V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Jingo V1 and deposit it into Jingo V3."
+msgstr "For each pool shown below, click migrate to remove your liquidity from Jingo V1 and deposit it into Jingo V3."
 
 #: 
-#~ msgid "For each pool shown below, click migrate to remove your liquidity from Pegasys and deposit it into PegasysV2."
-#~ msgstr "For each pool shown below, click migrate to remove your liquidity from Pegasys and deposit it into PegasysV2."
+#~ msgid "For each pool shown below, click migrate to remove your liquidity from Jingo and deposit it into JingoV2."
+#~ msgstr "For each pool shown below, click migrate to remove your liquidity from Jingo and deposit it into JingoV2."
 
 #: 
 #~ msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
@@ -1429,20 +1429,20 @@ msgid "Migrate liquidity failed"
 msgstr "Migrate liquidity failed"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Pegasys V1 to Pegasys V3."
-msgstr "Migrate your liquidity tokens from Pegasys V1 to Pegasys V3."
+msgid "Migrate your liquidity tokens from Jingo V1 to Jingo V3."
+msgstr "Migrate your liquidity tokens from Jingo V1 to Jingo V3."
 
 #: 
-#~ msgid "Migrate your liquidity tokens from Pegasys V2 to Pegasys V3."
-#~ msgstr "Migrate your liquidity tokens from Pegasys V2 to Pegasys V3."
+#~ msgid "Migrate your liquidity tokens from Jingo V2 to Jingo V3."
+#~ msgstr "Migrate your liquidity tokens from Jingo V2 to Jingo V3."
 
 #: 
-#~ msgid "Migrate your liquidity tokens from Pegasys to PegasysV2."
-#~ msgstr "Migrate your liquidity tokens from Pegasys to PegasysV2."
+#~ msgid "Migrate your liquidity tokens from Jingo to JingoV2."
+#~ msgstr "Migrate your liquidity tokens from Jingo to JingoV2."
 
 #: 
-#~ msgid "Migrate your liquidity tokens from Pegasys V2 to Pegasys V3."
-#~ msgstr "Migrate your liquidity tokens from Pegasys V2 to Pegasys V3."
+#~ msgid "Migrate your liquidity tokens from Jingo V2 to Jingo V3."
+#~ msgstr "Migrate your liquidity tokens from Jingo V2 to Jingo V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1495,12 +1495,12 @@ msgid "Missing chart data"
 msgstr "Missing chart data"
 
 #: src/components/Tokens/TokenDetails/PriceChart.tsx
-msgid "Missing price data due to recently low trading volume on Pegasys v3"
-msgstr "Missing price data due to recently low trading volume on Pegasys v3"
+msgid "Missing price data due to recently low trading volume on Jingo v3"
+msgstr "Missing price data due to recently low trading volume on Jingo v3"
 
 #: 
-#~ msgid "Missing price data due to recently low trading volume on PegasysV2"
-#~ msgstr "Missing price data due to recently low trading volume on PegasysV2"
+#~ msgid "Missing price data due to recently low trading volume on JingoV2"
+#~ msgstr "Missing price data due to recently low trading volume on JingoV2"
 
 #: 
 #~ msgid "Missing price data due to recently low trading volume on Uniswap v3"
@@ -1700,24 +1700,24 @@ msgid "Jingo Finance Terms of Service"
 msgstr "Jingo Finance Terms of Service"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Pegasys Governance"
-msgstr "Pegasys Governance"
+msgid "Jingo Governance"
+msgstr "Jingo Governance"
 
 #: src/pages/Pool/v2.tsx
-msgid "Pegasys V1 is not available on this network."
-msgstr "Pegasys V1 is not available on this network."
+msgid "Jingo V1 is not available on this network."
+msgstr "Jingo V1 is not available on this network."
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Pegasys available in: <0>{0}</0>"
-msgstr "Pegasys available in: <0>{0}</0>"
+msgid "Jingo available in: <0>{0}</0>"
+msgstr "Jingo available in: <0>{0}</0>"
 
 #: src/nft/components/collection/TransactionCompleteModal.tsx
-msgid "Pegasys has granted your wish!"
-msgstr "Pegasys has granted your wish!"
+msgid "Jingo has granted your wish!"
+msgstr "Jingo has granted your wish!"
 
 #: 
-#~ msgid "Pegasys is not available on this network."
-#~ msgstr "Pegasys is not available on this network."
+#~ msgid "Jingo is not available on this network."
+#~ msgstr "Jingo is not available on this network."
 
 #: src/components/AccountDrawer/MiniPortfolio/Activity/index.tsx
 #: src/pages/Vote/styled.tsx
@@ -1725,8 +1725,8 @@ msgid "Pending"
 msgstr "Pending"
 
 #: src/pages/Swap/index.tsx
-msgid "Permission is required for Pegasys to swap each token. This will expire after one month for your security."
-msgstr "Permission is required for Pegasys to swap each token. This will expire after one month for your security."
+msgid "Permission is required for Jingo to swap each token. This will expire after one month for your security."
+msgstr "Permission is required for Jingo to swap each token. This will expire after one month for your security."
 
 #: 
 #~ msgid "Permission is required for Uniswap to swap each token. This will expire after one month for your security."
@@ -1922,8 +1922,8 @@ msgid "Rates"
 msgstr "Rates"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Pegasys governance"
-msgstr "Read more about Pegasys governance"
+msgid "Read more about Jingo governance"
+msgstr "Read more about Jingo governance"
 
 #: 
 #~ msgid "Read more about Uniswap governance"
@@ -2357,8 +2357,8 @@ msgid "Terms of Service"
 msgstr "Terms of Service"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Pegasys community <0/>"
-msgstr "Thanks for being part of the Pegasys community <0/>"
+msgid "Thanks for being part of the Jingo community <0/>"
+msgstr "Thanks for being part of the Jingo community <0/>"
 
 #: 
 #~ msgid "Thanks for being part of the Uniswap community <0/>"
@@ -2369,8 +2369,8 @@ msgid "The % you will earn in fees."
 msgstr "The % you will earn in fees."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Pegasys invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "The Pegasys invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgid "The Jingo invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "The Jingo invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
 
 #: 
 #~ msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
@@ -2439,12 +2439,12 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "The output token cannot be transferred. There may be an issue with the output token."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
-msgstr "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
+msgstr "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
 
 #: 
-#~ msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
-#~ msgstr "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
+#~ msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
+#~ msgstr "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
 
 #: 
 #~ msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
@@ -2471,8 +2471,8 @@ msgid "There is no liquidity data."
 msgstr "There is no liquidity data."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Pegasys interface because it is associated with one or more"
-msgstr "This address is blocked on the Pegasys interface because it is associated with one or more"
+msgid "This address is blocked on the Jingo interface because it is associated with one or more"
+msgstr "This address is blocked on the Jingo interface because it is associated with one or more"
 
 #: 
 #~ msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
@@ -2499,8 +2499,8 @@ msgid "This route optimizes your total output by considering split routes, multi
 msgstr "This route optimizes your total output by considering split routes, multiple hops, and the gas cost of each step."
 
 #: src/pages/Tokens/index.tsx
-msgid "This table contains the top tokens by Pegasys volume, sorted based on your input."
-msgstr "This table contains the top tokens by Pegasys volume, sorted based on your input."
+msgid "This table contains the top tokens by Jingo volume, sorted based on your input."
+msgstr "This table contains the top tokens by Jingo volume, sorted based on your input."
 
 #: 
 #~ msgid "This table contains the top tokens by Uniswap volume, sorted based on your input."
@@ -2523,12 +2523,12 @@ msgid "This transaction could not be sent because the deadline has passed. Pleas
 msgstr "This transaction could not be sent because the deadline has passed. Please check that your transaction deadline is not too low."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
-msgstr "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Pegasys V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
+msgstr "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Jingo V3."
 
 #: 
-#~ msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
-#~ msgstr "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with PegasysV2."
+#~ msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
+#~ msgstr "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with JingoV2."
 
 #: 
 #~ msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
@@ -2612,12 +2612,12 @@ msgid "Total"
 msgstr "Total"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Total value locked (TVL) is the aggregate amount of the asset available across all Pegasys v3 liquidity pools."
-msgstr "Total value locked (TVL) is the aggregate amount of the asset available across all Pegasys v3 liquidity pools."
+msgid "Total value locked (TVL) is the aggregate amount of the asset available across all Jingo v3 liquidity pools."
+msgstr "Total value locked (TVL) is the aggregate amount of the asset available across all Jingo v3 liquidity pools."
 
 #: 
-#~ msgid "Total value locked (TVL) is the aggregate amount of the asset available across all PegasysV2 liquidity pools."
-#~ msgstr "Total value locked (TVL) is the aggregate amount of the asset available across all PegasysV2 liquidity pools."
+#~ msgid "Total value locked (TVL) is the aggregate amount of the asset available across all JingoV2 liquidity pools."
+#~ msgstr "Total value locked (TVL) is the aggregate amount of the asset available across all JingoV2 liquidity pools."
 
 #: 
 #~ msgid "Total value locked (TVL) is the aggregate amount of the asset available across all Uniswap v3 liquidity pools."
@@ -2687,8 +2687,8 @@ msgid "UNI has arrived"
 msgstr "UNI has arrived"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Pegasys governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "UNI tokens represent voting shares in Pegasys governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgid "UNI tokens represent voting shares in Jingo governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "UNI tokens represent voting shares in Jingo governance. You can vote on each proposal yourself or delegate your votes to a third party."
 
 #: 
 #~ msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
@@ -2827,8 +2827,8 @@ msgid "Update Delegation"
 msgstr "Update Delegation"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Pegasys API to get faster quotes."
-msgstr "Use the Pegasys API to get faster quotes."
+msgid "Use the Jingo API to get faster quotes."
+msgstr "Use the Jingo API to get faster quotes."
 
 #: 
 #~ msgid "Use the Uniswap Labs API to get faster quotes."
@@ -2885,12 +2885,12 @@ msgid "View transaction on Explorer"
 msgstr "View transaction on Explorer"
 
 #: src/components/Tokens/TokenTable/TokenRow.tsx
-msgid "Volume is the amount of the asset that has been traded on Pegasys v3 during the selected time frame."
-msgstr "Volume is the amount of the asset that has been traded on Pegasys v3 during the selected time frame."
+msgid "Volume is the amount of the asset that has been traded on Jingo v3 during the selected time frame."
+msgstr "Volume is the amount of the asset that has been traded on Jingo v3 during the selected time frame."
 
 #: 
-#~ msgid "Volume is the amount of the asset that has been traded on PegasysV2 during the selected time frame."
-#~ msgstr "Volume is the amount of the asset that has been traded on PegasysV2 during the selected time frame."
+#~ msgid "Volume is the amount of the asset that has been traded on JingoV2 during the selected time frame."
+#~ msgstr "Volume is the amount of the asset that has been traded on JingoV2 during the selected time frame."
 
 #: 
 #~ msgid "Volume is the amount of the asset that has been traded on Uniswap v3 during the selected time frame."
@@ -3046,8 +3046,8 @@ msgid "You are not the owner of this LP position. You will not be able to withdr
 msgstr "You are not the owner of this LP position. You will not be able to withdraw the liquidity from this position unless you own the following address: {ownerAddress}"
 
 #: 
-#~ msgid "You are the first liquidity provider for this PegasysV2 pool. Your liquidity will migrate at the current {0} price."
-#~ msgstr "You are the first liquidity provider for this PegasysV2 pool. Your liquidity will migrate at the current {0} price."
+#~ msgid "You are the first liquidity provider for this JingoV2 pool. Your liquidity will migrate at the current {0} price."
+#~ msgstr "You are the first liquidity provider for this JingoV2 pool. Your liquidity will migrate at the current {0} price."
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
@@ -3087,8 +3087,8 @@ msgid "You receive"
 msgstr "You receive"
 
 #: 
-#~ msgid "You should only deposit liquidity into PegasysV2 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-#~ msgstr "You should only deposit liquidity into PegasysV2 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+#~ msgid "You should only deposit liquidity into JingoV2 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+#~ msgstr "You should only deposit liquidity into JingoV2 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
@@ -3275,8 +3275,8 @@ msgid "{0, plural, =1 {Resolve issue} other {{1}}}"
 msgstr "{0, plural, =1 {Resolve issue} other {{1}}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys.}}"
-msgstr "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Pegasys.}}"
+msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Jingo.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Jingo.}}"
+msgstr "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Jingo.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Jingo.}}"
 
 #: 
 #~ msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.} other {These tokens aren't traded on leading U.S. centralized exchanges or frequently swapped on Uniswap.}}"
@@ -3287,8 +3287,8 @@ msgid "{0, plural, =1 {This token isn't traded on leading U.S. centralized excha
 msgstr "{0, plural, =1 {This token isn't traded on leading U.S. centralized exchanges.} other {These tokens aren't traded on leading U.S. centralized exchanges.}}"
 
 #: src/constants/tokenSafety.tsx
-msgid "{0, plural, =1 {You can't trade this token using the Pegasys App.} other {You can't trade these tokens using the Pegasys App.}}"
-msgstr "{0, plural, =1 {You can't trade this token using the Pegasys App.} other {You can't trade these tokens using the Pegasys App.}}"
+msgid "{0, plural, =1 {You can't trade this token using the Jingo App.} other {You can't trade these tokens using the Jingo App.}}"
+msgstr "{0, plural, =1 {You can't trade this token using the Jingo App.} other {You can't trade these tokens using the Jingo App.}}"
 
 #: 
 #~ msgid "{0, plural, =1 {You can't trade this token using the Uniswap App.} other {You can't trade these tokens using the Uniswap App.}}"
@@ -3386,18 +3386,18 @@ msgstr "{0}% select"
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid ""
 "{0}. Try increasing your slippage tolerance.\n"
-"Note: fee-on-transfer and rebase tokens are incompatible with Pegasys V3."
+"Note: fee-on-transfer and rebase tokens are incompatible with Jingo V3."
 msgstr ""
 "{0}. Try increasing your slippage tolerance.\n"
-"Note: fee-on-transfer and rebase tokens are incompatible with Pegasys V3."
+"Note: fee-on-transfer and rebase tokens are incompatible with Jingo V3."
 
 #: 
 #~ msgid ""
 #~ "{0}. Try increasing your slippage tolerance.\n"
-#~ "Note: fee-on-transfer and rebase tokens are incompatible with PegasysV2."
+#~ "Note: fee-on-transfer and rebase tokens are incompatible with JingoV2."
 #~ msgstr ""
 #~ "{0}. Try increasing your slippage tolerance.\n"
-#~ "Note: fee-on-transfer and rebase tokens are incompatible with PegasysV2."
+#~ "Note: fee-on-transfer and rebase tokens are incompatible with JingoV2."
 
 #: 
 #~ msgid ""

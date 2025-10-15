@@ -7,7 +7,7 @@ import { useIsPoolsPage } from 'hooks/useIsPoolsPage'
 import { useAtomValue } from 'jotai'
 import { Box } from 'nft/components/Box'
 import { Row } from 'nft/components/Flex'
-import { PegasysIcon } from 'nft/components/icons'
+import { JingoIcon } from 'nft/components/icons'
 import { useProfilePageState } from 'nft/hooks'
 import { ProfilePageStateType } from 'nft/types'
 import { ReactNode } from 'react'
@@ -131,10 +131,10 @@ const Navbar = ({ blur }: { blur: boolean }) => {
         <Box display="flex" height="full" flexWrap="nowrap">
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer}>
-              <PegasysIcon
+              <JingoIcon
                 width="48"
                 height="48"
-                data-testid="pegasys-logo"
+                data-testid="jingo-logo"
                 className={styles.logo}
                 onClick={() => {
                   navigate({

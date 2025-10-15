@@ -1,5 +1,5 @@
-import { Currency } from '@pollum-io/sdk-core'
-import { FeeAmount } from '@pollum-io/v3-sdk'
+import { Currency } from '@jingofi/sdk-core'
+import { FeeAmount } from '@jingofi/v3-sdk'
 import { TickProcessed, usePoolActiveLiquidity } from 'hooks/usePoolTickData'
 import { useCallback, useMemo } from 'react'
 

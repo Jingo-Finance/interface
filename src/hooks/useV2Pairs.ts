@@ -1,13 +1,13 @@
 import { Interface } from '@ethersproject/abi'
-import IPegasysPairABI from '@pollum-io/pegasys-protocol/artifacts/contracts/pegasys-core/interfaces/IPegasysPair.sol/IPegasysPair.json'
-import { Currency, CurrencyAmount } from '@pollum-io/sdk-core'
-import { computePairAddress, Pair } from '@pollum-io/v1-sdk'
+import IJingoPairABI from '@jingofi/jingo-protocol/artifacts/contracts/jingo-core/interfaces/IJingoPair.sol/IJingoPair.json'
+import { Currency, CurrencyAmount } from '@jingofi/sdk-core'
+import { computePairAddress, Pair } from '@jingofi/v1-sdk'
 import { useMultipleContractSingleData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
 
 import { V2_FACTORY_ADDRESSES } from '../constants/addresses'
 
-const PAIR_INTERFACE = new Interface(IPegasysPairABI.abi)
+const PAIR_INTERFACE = new Interface(IJingoPairABI.abi)
 
 export enum PairState {
   LOADING,

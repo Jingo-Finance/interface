@@ -1,5 +1,5 @@
-import { CurrencyAmount, Token } from '@pollum-io/sdk-core'
-import { UNIVERSAL_ROUTER_ADDRESS } from '@pollum-io/universal-router-sdk'
+import { CurrencyAmount, Token } from '@jingofi/sdk-core'
+import { UNIVERSAL_ROUTER_ADDRESS } from '@jingofi/universal-router-sdk'
 import { useWeb3React } from '@web3-react/core'
 import usePermit2Allowance, { AllowanceState } from 'hooks/usePermit2Allowance'
 import { useCallback, useMemo, useState } from 'react'

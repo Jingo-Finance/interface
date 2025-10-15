@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@pollum-io/sdk-core'
-import { Pair } from '@pollum-io/v1-sdk'
+import { CurrencyAmount, Percent, Token } from '@jingofi/sdk-core'
+import { Pair } from '@jingofi/v1-sdk'
 import { useWeb3React } from '@web3-react/core'
 import JSBI from 'jsbi'
 import { useState } from 'react'
@@ -297,7 +297,7 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
             {/* <ButtonSecondary padding="8px" $borderRadius="8px">
               <ExternalLink
                 style={{ width: '100%', textAlign: 'center' }}
-                href={`https://v1.info.pegasys.fi/account/${account}`}
+                href={`https://v1.info.jingo.finance/account/${account}`}
               >
                 <Trans>
                   View accrued fees and analytics<span style={{ fontSize: '11px' }}>↗</span>

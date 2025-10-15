@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { ChainId } from '@pollum-io/smart-order-router'
-import { FeeAmount } from '@pollum-io/v3-sdk'
+import { ChainId } from '@jingofi/smart-order-router'
+import { FeeAmount } from '@jingofi/v3-sdk'
 import { ALL_SUPPORTED_CHAIN_IDS } from 'constants/chains'
 import type { ReactNode } from 'react'
 

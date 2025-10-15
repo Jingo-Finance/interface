@@ -1,6 +1,6 @@
-import { FACTORY_ADDRESS_MAP as V2_FACTORY_ADDRESS } from '@pollum-io/v1-sdk'
-// import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@pollum-io/v1-sdk'
-import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@pollum-io/v3-sdk'
+import { FACTORY_ADDRESS_MAP as V2_FACTORY_ADDRESS } from '@jingofi/v1-sdk'
+// import { FACTORY_ADDRESS as V2_FACTORY_ADDRESS } from '@jingofi/v1-sdk'
+import { FACTORY_ADDRESS as V3_FACTORY_ADDRESS } from '@jingofi/v3-sdk'
 import { SupportedChainId } from 'constants/chains'
 
 import { constructSameAddressMap } from '../utils/constructSameAddressMap'

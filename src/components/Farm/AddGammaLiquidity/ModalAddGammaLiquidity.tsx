@@ -1,6 +1,6 @@
 import { i18n } from '@lingui/core'
 import { Trans } from '@lingui/macro'
-import { Token } from '@pollum-io/sdk-core'
+import { Token } from '@jingofi/sdk-core'
 import { formatNumber } from '@uniswap/conedison/format'
 import { useWeb3React } from '@web3-react/core'
 import { ButtonPrimary } from 'components/Button'
@@ -534,7 +534,7 @@ export default function ModalAddGammaLiquidity({
                           style={{ height: 'auto', display: 'flex' }}
                           text={
                             <Trans>
-                              Permission is required for Pegasys farm to swap each token. This will expire after one
+                              Permission is required for Jingo farm to swap each token. This will expire after one
                               month for your security.
                             </Trans>
                           }

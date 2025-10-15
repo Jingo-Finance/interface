@@ -1,5 +1,5 @@
-import { Trade } from '@pollum-io/router-sdk'
-import { Currency, CurrencyAmount, Percent, Price, Token, TradeType } from '@pollum-io/sdk-core'
+import { Trade } from '@jingofi/router-sdk'
+import { Currency, CurrencyAmount, Percent, Price, Token, TradeType } from '@jingofi/sdk-core'
 import { NATIVE_CHAIN_ID } from 'constants/tokens'
 import { InterfaceTrade } from 'state/routing/types'
 import { computeRealizedPriceImpact } from 'utils/prices'

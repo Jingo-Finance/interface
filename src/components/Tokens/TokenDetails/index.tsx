@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@pollum-io/widgets'
+import { Currency } from '@jingofi/widgets'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import { BreadcrumbNavLink } from 'components/Tokens/TokenDetails/BreadcrumbNavLink'
 import ChartSection from 'components/Tokens/TokenDetails/ChartSection'
