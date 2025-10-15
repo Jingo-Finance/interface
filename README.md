@@ -10,14 +10,14 @@
 
 An open source interface for Pegasys -- a protocol for decentralized exchange of Ethereum tokens.
 
-- Website: [pegasys.fi](https://pegasys.fi/)
+- Website: [pegasys.fi](https://jingo.finance/)
 - Interface: [app.pegasys.fi](https://app.pegasys.fi)
 - Docs: [pegasys.fi/docs/](https://docs.pegasys.fi/)
 - Twitter: [@Pegasys](https://twitter.com/PegasysDEX)
 - Email: [pegasys@pollum.io](mailto:pegasys@pollum.io)
 - Discord: [Pegasys](https://discord.gg/UzjWbWWERz)
 - Litepaper:
-  - [Pegasys](https://pegasys.finance/blog/introducing-pegasys/)
+  - [Pegasys](https://jingo.finance/blog/introducing-pegasys/)
   - [UniV3](https://uniswap.org/whitepaper-v3.pdf)
 
 ## Accessing the Pegasys Interface
@@ -63,9 +63,9 @@ Other things to note:
 - Changes will be previewable via vercel. Non-obvious changes should include instructions for how to reproduce them
 
 
-## Accessing Pegasys V1
+## Accessing Jingo Finance
 
-The Pegasys Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for Pegasys protocol V3.
+The Jingo Finance Interface supports swapping, adding liquidity, removing liquidity and migrating liquidity for Jingo Finance V3.
 
 - Swap on Pegasys V1: <https://v1.pegasys.fi/>
 - View V1 liquidity: <https://app.pegasys.fi/#/pools/v2>

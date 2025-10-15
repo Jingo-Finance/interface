@@ -64,7 +64,7 @@ const CHAIN_INFO: ChainInfoMap = {
     // Optimism perfers same icon for both
     circleLogoUrl: rolluxLogoUrl,
     statusPage: 'https://rollux.com/',
-    helpCenterUrl: 'https://pegasys.fi/',
+    helpCenterUrl: 'https://jingo.finance/',
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     color: darkTheme.chain_570_background,
     backgroundColor: darkTheme.chain_570_background,
@@ -80,7 +80,7 @@ const CHAIN_INFO: ChainInfoMap = {
     label: 'Rollux Tanenbaum',
     logoUrl: rolluxTennenbalLogoUrl,
     statusPage: 'https://rollux.com/',
-    helpCenterUrl: 'https://pegasys.fi/',
+    helpCenterUrl: 'https://jingo.finance/',
     nativeCurrency: { name: 'Syscoin', symbol: 'SYS', decimals: 18 },
     color: darkTheme.chain_57000_background,
   },

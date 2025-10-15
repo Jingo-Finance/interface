@@ -11,7 +11,7 @@ export default function PrivacyPolicyNotice() {
   return (
     <ThemedText.Caption color="textSecondary">
       <Trans>By connecting a wallet, you agree to Jingo Finance</Trans>{' '}
-      <StyledLink href="https://pegasys.fi/terms-of-service">
+      <StyledLink href="https://jingo.finance/terms-of-service">
         <Trans>Terms of Service</Trans>{' '}
       </StyledLink>
     </ThemedText.Caption>
