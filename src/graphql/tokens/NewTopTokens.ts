@@ -3,11 +3,11 @@ import { SupportedChainId } from '@pollum-io/widgets'
 import { useMemo } from 'react'
 
 import { apolloClient } from '../thegraph/apollo'
-import { unwrapTokenRollux } from '../utils/util'
+import { unwrapTokenPlasma } from '../utils/util'
 
 // eslint-disable-next-line import/no-unused-modules
 export const TOP_TOKENS = gql`
-  query TopTokensRollux {
+  query TopTokensPlasma {
     tokens(first: 50, orderBy: totalValueLockedUSD, orderDirection: desc, subgraphError: allow) {
       id
       symbol

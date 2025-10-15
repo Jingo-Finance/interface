@@ -135,7 +135,7 @@ export function BannerAlert() {
                 <Trans>Buy $XPL on Coinify</Trans>
               </Header>
               <HideSmall>
-                <Trans>With a few clicks you can acquire $XPL on Rollux Network</Trans>
+                <Trans>With a few clicks you can acquire $XPL on Plasma Network</Trans>
               </HideSmall>
             </AutoRow>
           </BodyText>

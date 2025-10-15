@@ -56,7 +56,7 @@ export const CollectionRow = ({
   const addRecentlySearchedAsset = useAddRecentlySearchedAsset()
 
   const handleClick = useCallback(() => {
-    // addRecentlySearchedAsset({ ...collection, isNft: true, chain: Chain.Rollux })
+    // addRecentlySearchedAsset({ ...collection, isNft: true, chain: Chain.Plasma })
     toggleOpen()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [addRecentlySearchedAsset, collection, toggleOpen, eventProperties])
