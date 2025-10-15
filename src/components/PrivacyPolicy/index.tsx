@@ -129,7 +129,7 @@ function PrivacyPolicy() {
                 <AutoRow gap="4px">
                   <Info size={20} />
                   <ThemedText.DeprecatedMain fontSize={14} color="accentActive">
-                    <Trans>Pegasys Finance Terms of Service</Trans>
+                    <Trans>Jingo Finance Terms of Service</Trans>
                   </ThemedText.DeprecatedMain>
                 </AutoRow>
                 <StyledLinkOut size={20} />

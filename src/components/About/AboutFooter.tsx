@@ -123,7 +123,7 @@ const LogoSectionContent = () => {
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>
-      <Copyright>© {new Date().getFullYear()} Pegasys Finance</Copyright>
+      <Copyright>© {new Date().getFullYear()} Jingo Finance</Copyright>
     </>
   )
 }

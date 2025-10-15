@@ -89,7 +89,7 @@ const ProtocolBanner = () => {
   return (
     <Banner isDarkMode={isDarkMode}>
       <TextContainer>
-        <HeaderText>Powered by the Pegasys Finance</HeaderText>
+        <HeaderText>Powered by the Jingo Finance</HeaderText>
         <DescriptionText>
           The leading decentralized crypto trading protocol, governed by a global community.
         </DescriptionText>

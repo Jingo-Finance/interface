@@ -490,8 +490,8 @@ msgid "By adding liquidity you'll earn 0.3% of all trades on this pair proportio
 msgstr "By adding liquidity you'll earn 0.3% of all trades on this pair proportional to your share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity."
 
 #: src/components/WalletModal/PrivacyPolicyNotice.tsx
-msgid "By connecting a wallet, you agree to Pegasys Finance"
-msgstr "By connecting a wallet, you agree to Pegasys Finance"
+msgid "By connecting a wallet, you agree to Jingo Finance"
+msgstr "By connecting a wallet, you agree to Jingo Finance"
 
 #: 
 #~ msgid "By connecting a wallet, you agree to Uniswap Labs'"
@@ -1696,8 +1696,8 @@ msgid "Pay with"
 msgstr "Pay with"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Pegasys Finance Terms of Service"
-msgstr "Pegasys Finance Terms of Service"
+msgid "Jingo Finance Terms of Service"
+msgstr "Jingo Finance Terms of Service"
 
 #: src/pages/Vote/Landing.tsx
 msgid "Pegasys Governance"
