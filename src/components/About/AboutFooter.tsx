@@ -116,10 +116,10 @@ const LogoSectionContent = () => {
         <SocialLink href="https://discord.com/invite/UzjWbWWERz" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />
         </SocialLink>
-        <SocialLink href="https://twitter.com/PegasysDEX" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://x.com/JingoFinance" target="_blank" rel="noopener noreferrer">
           <TwitterIcon size={32} />
         </SocialLink>
-        <SocialLink href="https://github.com/pegasys-fi" target="_blank" rel="noopener noreferrer">
+        <SocialLink href="https://github.com/Jingo-Finance" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
       </SocialLinks>

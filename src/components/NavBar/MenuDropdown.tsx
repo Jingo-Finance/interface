@@ -265,7 +265,7 @@ export const MenuDropdown = () => {
                 <Icon href="https://discord.com/invite/UzjWbWWERz">
                   <DiscordIconMenu className={styles.hover} width={24} height={24} color={theme.accentActive} />
                 </Icon>
-                <Icon href="https://twitter.com/PegasysDEX">
+                <Icon href="https://x.com/JingoFinance">
                   <TwitterIconMenu className={styles.hover} width={24} height={24} color={theme.accentActive} />
                 </Icon>
               </IconRow>

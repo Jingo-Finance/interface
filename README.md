@@ -13,7 +13,7 @@ An open source interface for Pegasys -- a protocol for decentralized exchange of
 - Website: [pegasys.fi](https://jingo.finance/)
 - Interface: [app.pegasys.fi](https://app.pegasys.fi)
 - Docs: [pegasys.fi/docs/](https://docs.pegasys.fi/)
-- Twitter: [@Pegasys](https://twitter.com/PegasysDEX)
+- Twitter: [@Pegasys](https://x.com/JingoFinance)
 - Email: [pegasys@pollum.io](mailto:pegasys@pollum.io)
 - Discord: [Pegasys](https://discord.gg/UzjWbWWERz)
 - Litepaper:
@@ -23,7 +23,7 @@ An open source interface for Pegasys -- a protocol for decentralized exchange of
 ## Accessing the Pegasys Interface
 
 To access the Pegasys Interface, use an IPFS gateway link from the
-[latest release](https://github.com/Pegasys-fi/interface/releases/latest),
+[latest release](https://github.com/Jingo-Finance/interface/releases/latest),
 or visit [app.pegasys.fi](https://app.pegasys.fi).
 
 ## Unsupported tokens
