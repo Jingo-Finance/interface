@@ -1,5 +1,5 @@
 overrideExisting: true
-schema: 'https://plasma.graph.jingo.finance/subgraphs/name/jingofi/jingo-v3'
+schema: 'https://ink.graph.jingo.finance/subgraphs/name/jingofi/jingo-v3'
 generates:
   ./src/graphql/thegraph/schema/schema.graphql:
     plugins:

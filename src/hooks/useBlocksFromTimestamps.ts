@@ -40,13 +40,13 @@ export function useBlocksFromTimestamps(
   const activeBlockClient = blockClientOverride ?? blockClient
 
   // derive blocks based on active network
-  const networkBlocks = blocks?.[SupportedChainId.PLASMA]
+  const networkBlocks = blocks?.[SupportedChainId.INK]
 
   useEffect(() => {
     async function fetchData() {
       const results = await splitQuery(GET_BLOCKS, activeBlockClient, [], timestamps)
       if (results) {
-        setBlocks({ ...(blocks ?? {}), [SupportedChainId.PLASMA]: results })
+        setBlocks({ ...(blocks ?? {}), [SupportedChainId.INK]: results })
       } else {
         setError(true)
       }
@@ -57,11 +57,11 @@ export function useBlocksFromTimestamps(
   })
 
   const blocksFormatted = useMemo(() => {
-    if (blocks?.[SupportedChainId.PLASMA]) {
-      const networkBlocks = blocks?.[SupportedChainId.PLASMA]
+    if (blocks?.[SupportedChainId.INK]) {
+      const networkBlocks = blocks?.[SupportedChainId.INK]
 
       const formatted = []
-      const deploymentBlock = START_BLOCKS[SupportedChainId.PLASMA]
+      const deploymentBlock = START_BLOCKS[SupportedChainId.INK]
 
       for (const [t, networkBlock] of Object.entries(networkBlocks)) {
         const nb = networkBlock as any[]

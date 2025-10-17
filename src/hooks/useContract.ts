@@ -173,7 +173,7 @@ export function useTickLens(): TickLens | null {
 }
 
 export function useMasterChefContract(withSignerIfPossible?: boolean, abi?: any) {
-  return useContract(GAMMA_MASTERCHEF_ADDRESSES[ChainId.PLASMA], abi ?? GammaMasterChef, withSignerIfPossible)
+  return useContract(GAMMA_MASTERCHEF_ADDRESSES[ChainId.INK], abi ?? GammaMasterChef, withSignerIfPossible)
 }
 
 // export function useMasterChefContracts(withSignerIfPossible?: boolean) {
@@ -185,5 +185,5 @@ export function useGammaHypervisorContract(address?: string, withSignerIfPossibl
 }
 
 export function useGammaUniProxyContract(withSignerIfPossible?: boolean) {
-  return useContract(GAMMA_UNIPROXY_ADDRESSES[ChainId.PLASMA], GammaUniProxyABI, withSignerIfPossible)
+  return useContract(GAMMA_UNIPROXY_ADDRESSES[ChainId.INK], GammaUniProxyABI, withSignerIfPossible)
 }

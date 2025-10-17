@@ -5,7 +5,7 @@ import ms from 'ms.macro'
 import { darkTheme } from 'theme/colors'
 
 import { SupportedL1ChainId, SupportedL2ChainId } from './chains'
-import { PLASMA_LIST } from './lists'
+import { INK_LIST } from './lists'
 
 export const AVERAGE_L1_BLOCK_TIME = ms`12s`
 
@@ -51,37 +51,37 @@ type ChainInfoMap = { readonly [chainId: number]: L1ChainInfo | L2ChainInfo } & 
 } & { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
 
 const CHAIN_INFO: ChainInfoMap = {
-  [SupportedChainId.PLASMA]: {
+  [SupportedChainId.INK]: {
     networkType: NetworkType.L2,
     blockWaitMsBeforeWarning: ms`25m`,
     bridge: 'http://bridge.jingo.finance/',
-    defaultListUrl: PLASMA_LIST,
-    docs: 'https://www.plasma.to/',
-    explorer: 'https://plasmascan.to/',
+    defaultListUrl: INK_LIST,
+    docs: 'https://www.inkonchain.com/',
+    explorer: 'https://explorer.inkonchain.com/',
     infoLink: 'https://info.jingo.finance/#/',
     label: 'Rollux',
     logoUrl: rolluxLogoUrl,
     // Optimism perfers same icon for both
     circleLogoUrl: rolluxLogoUrl,
-    statusPage: 'https://www.plasma.to/',
+    statusPage: 'https://www.inkonchain.com/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
+    nativeCurrency: { name: 'INK', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_570_background,
     backgroundColor: darkTheme.chain_570_background,
   },
-  [SupportedChainId.PLASMA_TANENBAUM]: {
+  [SupportedChainId.INK_TANENBAUM]: {
     networkType: NetworkType.L2,
     blockWaitMsBeforeWarning: ms`25m`,
     bridge: 'http://bridge.jingo.finance/',
-    defaultListUrl: PLASMA_LIST,
-    docs: 'https://www.plasma.to/',
-    explorer: 'https://plasma.tanenbaum.io/',
+    defaultListUrl: INK_LIST,
+    docs: 'https://www.inkonchain.com/',
+    explorer: 'https://explorer.inkonchain.com/',
     infoLink: 'https://info.jingo.finance/#/',
-    label: 'Plasma Tanenbaum',
+    label: 'INK Tanenbaum',
     logoUrl: rolluxTennenbalLogoUrl,
-    statusPage: 'https://www.plasma.to/',
+    statusPage: 'https://www.inkonchain.com/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'Plasma', symbol: 'XPL', decimals: 18 },
+    nativeCurrency: { name: 'INK', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_57000_background,
   },
 }
@@ -108,7 +108,7 @@ export function getChainInfo(chainId: any): any {
   return undefined
 }
 
-const MAINNET_INFO = CHAIN_INFO[SupportedChainId.PLASMA]
+const MAINNET_INFO = CHAIN_INFO[SupportedChainId.INK]
 export function getChainInfoOrDefault(chainId: number | undefined) {
   return getChainInfo(chainId) ?? MAINNET_INFO
 }

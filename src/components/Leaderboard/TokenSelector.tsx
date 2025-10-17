@@ -148,7 +148,7 @@ const getTokenIcon = (token: TokenData, chainId: number) => {
 const TOKENS = [
   { symbol: 'All Tokens', name: '' },
   { symbol: 'PSYS', name: 'Jingo' },
-  { symbol: 'XPL', name: 'Plasma' },
+  { symbol: 'ETH', name: 'INK' },
   { symbol: 'SUPR', name: 'SuperDapp' },
   { symbol: 'UNO', name: 'UnoRe' },
   { symbol: 'LUXY', name: 'LUXY' },
@@ -212,7 +212,7 @@ export default function TokenSelector() {
   }
 
   const getDisplayText = () => {
-    const formattedTokens = selectedTokens.map((token) => (token === 'WSYS' ? 'XPL' : token))
+    const formattedTokens = selectedTokens.map((token) => (token === 'WSYS' ? 'ETH' : token))
     if (selectedTokens.includes('All Tokens')) return 'All Tokens'
     if (formattedTokens.length === 1) return formattedTokens[0]
     // Join selected tokens with commas
@@ -220,7 +220,7 @@ export default function TokenSelector() {
   }
 
   const TokenDisplay = ({ token }: { token: (typeof TOKENS)[0] }) => {
-    const proxyToken = { ...token, ...(token.symbol === 'WSYS' ? { symbol: 'XPL' } : {}) }
+    const proxyToken = { ...token, ...(token.symbol === 'WSYS' ? { symbol: 'ETH' } : {}) }
 
     const tokenData = tokens?.find((t) => t?.symbol === token?.symbol)
     return (
@@ -254,7 +254,7 @@ export default function TokenSelector() {
       {isOpen && (
         <MenuFlyout>
           {TOKENS.map((token) => {
-            token = { ...token, ...(token.symbol === 'XPL' ? { symbol: 'WSYS' } : {}) }
+            token = { ...token, ...(token.symbol === 'ETH' ? { symbol: 'WSYS' } : {}) }
             return (
               <MenuItem
                 key={token.symbol}

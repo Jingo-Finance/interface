@@ -109,7 +109,7 @@ export default function AddLiquidity() {
 
   const baseCurrency = useCurrency(currencyIdA)
   const currencyB = useCurrency(currencyIdB)
-  // prevent an error if they input XPL/WETH
+  // prevent an error if they input ETH/WETH
   const quoteCurrency =
     baseCurrency && currencyB && baseCurrency.wrapped.equals(currencyB.wrapped) ? undefined : currencyB
 
@@ -317,11 +317,11 @@ export default function AddLiquidity() {
       } else {
         // prevent weth + eth
         const isETHOrWETHNew =
-          currencyIdNew === 'XPL' ||
+          currencyIdNew === 'ETH' ||
           (chainId !== undefined && currencyIdNew === WRAPPED_NATIVE_CURRENCY[chainId]?.address)
         const isETHOrWETHOther =
           currencyIdOther !== undefined &&
-          (currencyIdOther === 'XPL' ||
+          (currencyIdOther === 'ETH' ||
             (chainId !== undefined && currencyIdOther === WRAPPED_NATIVE_CURRENCY[chainId]?.address))
 
         if (isETHOrWETHNew && isETHOrWETHOther) {

@@ -10,53 +10,53 @@ export const NATIVE_CHAIN_ID = 'NATIVE'
 // https://docs.openzeppelin.com/contracts/3.x/erc20
 export const DEFAULT_ERC20_DECIMALS = 18
 
-export const USDC_PLASMA = new Token(
-  SupportedChainId.PLASMA,
+export const USDC_INK = new Token(
+  SupportedChainId.INK,
   '0x368433CaC2A0B8D76E64681a9835502a1f2A8A30',
   6,
   'USDC',
   'USD Coin'
 )
-const USDC_PLASMA_TANENBAUM = new Token(
-  SupportedChainId.PLASMA_TANENBAUM,
+const USDC_INK_TANENBAUM = new Token(
+  SupportedChainId.INK_TANENBAUM,
   '0x2Be160796F509CC4B1d76fc97494D56CF109C3f1',
   6,
   'USDC',
   'USD Coin'
 )
-export const DAI_PLASMA = new Token(
-  SupportedChainId.PLASMA,
+export const DAI_INK = new Token(
+  SupportedChainId.INK,
   '0x5B0aC6194499621630ddebb30c4aBE37037b30Ec',
   18,
   'DAI',
   'Dai'
 )
-export const USDT_PLASMA = new Token(
-  SupportedChainId.PLASMA,
+export const USDT_INK = new Token(
+  SupportedChainId.INK,
   '0x28c9c7Fb3fE3104d2116Af26cC8eF7905547349c',
   6,
   'USDT',
   'Tether USD'
 )
-export const WBTC_PLASMA = new Token(
-  SupportedChainId.PLASMA,
+export const WBTC_INK = new Token(
+  SupportedChainId.INK,
   '0x2A4DC2e946b92AB4a1f7D62844EB237788F9056c',
   8,
   'WBTC',
   'Wrapped BTC'
-) // TODO: add WBTC to plasma
+) // TODO: add WBTC to ink
 
 export const UNI: { [chainId: number]: Token } = {
-  [SupportedChainId.PLASMA]: new Token(
-    SupportedChainId.PLASMA,
-    UNI_ADDRESS[SupportedChainId.PLASMA],
+  [SupportedChainId.INK]: new Token(
+    SupportedChainId.INK,
+    UNI_ADDRESS[SupportedChainId.INK],
     18,
     'PSYS',
     'Jingo'
   ),
-  [SupportedChainId.PLASMA_TANENBAUM]: new Token(
-    SupportedChainId.PLASMA_TANENBAUM,
-    UNI_ADDRESS[SupportedChainId.PLASMA_TANENBAUM],
+  [SupportedChainId.INK_TANENBAUM]: new Token(
+    SupportedChainId.INK_TANENBAUM,
+    UNI_ADDRESS[SupportedChainId.INK_TANENBAUM],
     18,
     'PSYS',
     'Jingo'
@@ -65,19 +65,19 @@ export const UNI: { [chainId: number]: Token } = {
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } = {
   ...(WETH9 as Record<SupportedChainId, Token>),
-  [SupportedChainId.PLASMA]: new Token(
-    SupportedChainId.PLASMA,
+  [SupportedChainId.INK]: new Token(
+    SupportedChainId.INK,
     '0x4200000000000000000000000000000000000006',
     18,
     'WSYS',
-    'Wrapped Plasma'
+    'Wrapped INK'
   ),
-  [SupportedChainId.PLASMA_TANENBAUM]: new Token(
-    SupportedChainId.PLASMA_TANENBAUM,
+  [SupportedChainId.INK_TANENBAUM]: new Token(
+    SupportedChainId.INK_TANENBAUM,
     '0x4200000000000000000000000000000000000006',
     18,
     'WSYS',
-    'Wrapped Plasma'
+    'Wrapped INK'
   ),
 }
 
@@ -105,7 +105,7 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
 
 export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in SupportedChainId]?: string } } = {
   USDC: {
-    [SupportedChainId.PLASMA]: USDC_PLASMA.address,
-    [SupportedChainId.PLASMA_TANENBAUM]: USDC_PLASMA_TANENBAUM.address,
+    [SupportedChainId.INK]: USDC_INK.address,
+    [SupportedChainId.INK_TANENBAUM]: USDC_INK_TANENBAUM.address,
   },
 }

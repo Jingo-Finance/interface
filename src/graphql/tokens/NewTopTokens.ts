@@ -3,11 +3,11 @@ import { SupportedChainId } from '@jingofi/widgets'
 import { useMemo } from 'react'
 
 import { apolloClient } from '../thegraph/apollo'
-import { unwrapTokenPlasma } from '../utils/util'
+import { unwrapTokenink } from '../utils/util'
 
 // eslint-disable-next-line import/no-unused-modules
 export const TOP_TOKENS = gql`
-  query TopTokensPlasma {
+  query TopTokensink {
     tokens(first: 50, orderBy: totalValueLockedUSD, orderDirection: desc, subgraphError: allow) {
       id
       symbol
@@ -62,7 +62,7 @@ export function useNewTopTokens(): {
     if (!data) return undefined
 
     const unwrappedTokens = data?.tokens.map((token) => {
-      return unwrapTokenRollux(SupportedChainId.PLASMA, token)
+      return unwrapTokenRollux(SupportedChainId.INK, token)
     })
 
     return unwrappedTokens

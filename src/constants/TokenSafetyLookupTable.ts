@@ -1,12 +1,12 @@
 import { TokenInfo } from '@uniswap/token-lists'
 
 import store from '../state'
-import { PLASMA_LIST, UNSUPPORTED_LIST_URLS } from './lists'
+import { INK_LIST, UNSUPPORTED_LIST_URLS } from './lists'
 import brokenTokenList from './tokenLists/broken.tokenlist.json'
 import { NATIVE_CHAIN_ID } from './tokens'
 
 export enum TOKEN_LIST_TYPES {
-  PLASMA_LIST = 1,
+  INK_LIST = 1,
   UNI_EXTENDED,
   UNKNOWN,
   BLOCKED,
@@ -25,8 +25,8 @@ class TokenSafetyLookupTable {
     // })
 
     // Initialize default tokens second, so that any tokens on both default and extended will display as default (no warning)
-    store.getState().lists.byUrl[PLASMA_LIST].current?.tokens.forEach((token) => {
-      dict[token.address.toLowerCase()] = TOKEN_LIST_TYPES.PLASMA_LIST
+    store.getState().lists.byUrl[INK_LIST].current?.tokens.forEach((token) => {
+      dict[token.address.toLowerCase()] = TOKEN_LIST_TYPES.INK_LIST
     })
 
     // TODO: Figure out if this list is still relevant
@@ -49,7 +49,7 @@ class TokenSafetyLookupTable {
       this.dict = this.createMap()
     }
     if (address === NATIVE_CHAIN_ID.toLowerCase()) {
-      return TOKEN_LIST_TYPES.PLASMA_LIST
+      return TOKEN_LIST_TYPES.INK_LIST
     }
 
     return this.dict[address] ?? TOKEN_LIST_TYPES.UNKNOWN

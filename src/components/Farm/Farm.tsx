@@ -74,7 +74,7 @@ export function Farms() {
   const [sortDesc, setSortDesc] = useState(false)
 
   const allGammaFarms = useMemo(() => {
-    const pairsGroups = GammaPairs[ChainId.PLASMA]
+    const pairsGroups = GammaPairs[ChainId.INK]
     if (!pairsGroups) {
       return []
     }

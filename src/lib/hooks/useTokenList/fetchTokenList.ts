@@ -4,9 +4,9 @@ import contenthashToUri from 'lib/utils/contenthashToUri'
 import parseENSAddress from 'lib/utils/parseENSAddress'
 import uriToHttp from 'lib/utils/uriToHttp'
 
-import { PLASMA_LIST } from '../../../constants/lists'
+import { INK_LIST } from '../../../constants/lists'
 
-export const DEFAULT_TOKEN_LIST = PLASMA_LIST
+export const DEFAULT_TOKEN_LIST = INK_LIST
 
 const listCache = new Map<string, TokenList>()
 

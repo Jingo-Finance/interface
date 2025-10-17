@@ -306,7 +306,7 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@jingofi/default-token-list@latest/plasma-default.tokenlist.json': {
+            'https://unpkg.com/@jingofi/default-token-list@latest/ink-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -325,7 +325,7 @@ describe('list reducer', () => {
 
       it('clears the current lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@jingofi/default-token-list@latest/plasma-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@jingofi/default-token-list@latest/ink-default.tokenlist.json']
         ).toBeUndefined()
         expect(store.getState().byUrl['https://unpkg.com/@jingofi/default-token-list@latest']).toBeUndefined()
       })
@@ -352,7 +352,7 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@jingofi/default-token-list@latest/plasma-default.tokenlist.json': {
+            'https://unpkg.com/@jingofi/default-token-list@latest/ink-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -372,7 +372,7 @@ describe('list reducer', () => {
 
       it('does not remove lists not in last initialized list of lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@jingofi/default-token-list@latest/plasma-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@jingofi/default-token-list@latest/ink-default.tokenlist.json']
         ).toEqual({
           error: null,
           current: STUB_TOKEN_LIST,
@@ -389,7 +389,7 @@ describe('list reducer', () => {
         Object.entries(byUrl)
           // We don't expect the Uniswap default list to be prepopulated
           .filter(
-            ([url]) => url !== 'https://unpkg.com/@jingofi/default-token-list@latest/plasma-default.tokenlist.json'
+            ([url]) => url !== 'https://unpkg.com/@jingofi/default-token-list@latest/ink-default.tokenlist.json'
           )
           .forEach(([, state]) => {
             expect(state).toEqual({

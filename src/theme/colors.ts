@@ -212,7 +212,7 @@ export const colors = {
   networkBsc: '#F0B90B',
   networkPolygonSoft: 'rgba(164, 87, 255, 0.16)',
   networkEthereumSoft: 'rgba(98, 126, 234, 0.16)',
-  networkPlasma: '#377DF5',
+  networkink: '#377DF5',
   networkRollux: 'rgb(219, 239, 136)',
 }
 

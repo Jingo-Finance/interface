@@ -1,10 +1,10 @@
-export const PLASMA_LIST =
+export const INK_LIST =
   'https://raw.githubusercontent.com/jingo-fi/default-token-list/main/build/jingo-default.tokenlist.json'
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [PLASMA_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [INK_LIST]
 export const DEFAULT_INACTIVE_LIST_URLS: string[] = [...UNSUPPORTED_LIST_URLS]
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [...DEFAULT_ACTIVE_LIST_URLS, ...DEFAULT_INACTIVE_LIST_URLS]

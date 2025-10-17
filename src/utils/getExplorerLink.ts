@@ -1,8 +1,8 @@
 import { SupportedChainId } from 'constants/chains'
 
 const BLOCK_EXPLORER_PREFIXES: { [chainId: number]: string } = {
-  [SupportedChainId.PLASMA]: 'https://plasmascan.to',
-  [SupportedChainId.PLASMA_TANENBAUM]: 'https://plasma.tanenbaum.io',
+  [SupportedChainId.INK]: 'https://explorer.inkonchain.com',
+  [SupportedChainId.INK_TANENBAUM]: 'https://explorer.inkonchain.com',
 }
 
 export enum ExplorerDataType {
@@ -47,7 +47,7 @@ export function getExplorerLink(chainId: number, data: string, type: ExplorerDat
   //   }
   // }
 
-  const prefix = BLOCK_EXPLORER_PREFIXES[chainId] ?? 'https://plasmascan.to'
+  const prefix = BLOCK_EXPLORER_PREFIXES[chainId] ?? 'https://explorer.inkonchain.com'
 
   switch (type) {
     case ExplorerDataType.TRANSACTION:

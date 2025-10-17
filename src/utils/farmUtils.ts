@@ -61,7 +61,7 @@ export function useUSDCPricesFromAddresses(addressArray: string[]) {
 }
 
 export function getTokenFromAddress(tokenAddress: string, tokenMap: TokenAddressMap, tokens: Token[]) {
-  const tokenIndex = Object.keys(tokenMap[ChainId.PLASMA]).findIndex(
+  const tokenIndex = Object.keys(tokenMap[ChainId.INK]).findIndex(
     (address) => address.toLowerCase() === tokenAddress.toLowerCase()
   )
 
@@ -69,7 +69,7 @@ export function getTokenFromAddress(tokenAddress: string, tokenMap: TokenAddress
     return tokens.find((item) => item.address.toLowerCase() === tokenAddress.toLowerCase())
   }
 
-  return Object.values(tokenMap[ChainId.PLASMA])[tokenIndex]
+  return Object.values(tokenMap[ChainId.INK])[tokenIndex]
 }
 
 // export function formatTokenAmount(amount?: TokenAmount | CurrencyAmount<Currency>, digits = 3) {

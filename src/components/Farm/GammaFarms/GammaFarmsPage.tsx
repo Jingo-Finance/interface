@@ -45,7 +45,7 @@ const GammaFarmsPage: React.FC<{
   }, [rewardPerSecond, rewardTokenAddress])
 
   const allGammaFarms = useMemo(() => {
-    const pairsGroups = GammaPairs[ChainId.PLASMA]
+    const pairsGroups = GammaPairs[ChainId.INK]
     if (!pairsGroups) {
       return []
     }

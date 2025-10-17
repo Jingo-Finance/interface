@@ -6,21 +6,21 @@
 
 import { ChainId } from '@jingofi/smart-order-router'
 
-const SUPPORTED_CHAINS = [ChainId.PLASMA, ChainId.PLASMA_TANENBAUM] as const
+const SUPPORTED_CHAINS = [ChainId.INK, ChainId.INK_TANENBAUM] as const
 type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
 // Because this is not explicitly derived from @jingofi/sdk-core, there is a unit test to enforce conformance.
 export enum SupportedChainId {
-  PLASMA = 570,
-  PLASMA_TANENBAUM = 57000,
+  INK = 570,
+  INK_TANENBAUM = 57000,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
-  [SupportedChainId.PLASMA]: 'plasma',
-  [SupportedChainId.PLASMA_TANENBAUM]: 'rollux_tanenbaum',
+  [SupportedChainId.INK]: 'ink',
+  [SupportedChainId.INK_TANENBAUM]: 'rollux_tanenbaum',
 }
 
-export type SupportedInterfaceChain = Exclude<SupportedChainsType, ChainId.PLASMA_TANENBAUM>
+export type SupportedInterfaceChain = Exclude<SupportedChainsType, ChainId.INK_TANENBAUM>
 
 /**
  * Array of all the supported chain IDs
@@ -33,7 +33,7 @@ export function isSupportedChain(chainId: number | null | undefined): chainId is
   return !!chainId && !!ChainId[chainId]
 }
 
-export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [SupportedChainId.PLASMA] as const
+export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [SupportedChainId.INK] as const
 
 /**
  * Unsupported networks for V2 pool behavior.
@@ -51,7 +51,7 @@ export type SupportedL1ChainId = (typeof L1_CHAIN_IDS)[number]
  * Controls some L2 specific behavior, e.g. slippage tolerance, special UI behavior.
  * The expectation is that all of these networks have immediate transaction confirmation.
  */
-export const L2_CHAIN_IDS = [ChainId.PLASMA, ChainId.PLASMA_TANENBAUM] as const
+export const L2_CHAIN_IDS = [ChainId.INK, ChainId.INK_TANENBAUM] as const
 
 export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]
 
@@ -62,8 +62,8 @@ export type SupportedL2ChainId = (typeof L2_CHAIN_IDS)[number]
  */
 export function getChainPriority(chainId: ChainId): number {
   switch (chainId) {
-    case ChainId.PLASMA:
-    case ChainId.PLASMA_TANENBAUM:
+    case ChainId.INK:
+    case ChainId.INK_TANENBAUM:
     default:
       return 2
   }

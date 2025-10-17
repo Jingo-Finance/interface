@@ -7,7 +7,7 @@ export function getNativeTokenDBAddress(chain: Chain): string | undefined {
     return undefined
   }
   switch (chain) {
-    case 'PLASMA' as Chain:
+    case 'INK' as Chain:
     default:
       return undefined
   }

@@ -2,7 +2,7 @@
 import { Currency, Token } from '@jingofi/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 
-import { nativeOnChain, USDC_PLASMA, USDT_PLASMA, WBTC_PLASMA, WRAPPED_NATIVE_CURRENCY } from './tokens'
+import { nativeOnChain, USDC_INK, USDT_INK, WBTC_INK, WRAPPED_NATIVE_CURRENCY } from './tokens'
 
 type ChainTokenList = {
   readonly [chainId: number]: Token[]
@@ -21,10 +21,10 @@ const WRAPPED_NATIVE_CURRENCIES_ONLY: ChainTokenList = Object.fromEntries(
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WRAPPED_NATIVE_CURRENCIES_ONLY,
-  [SupportedChainId.PLASMA]: [
-    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.PLASMA],
-    USDC_PLASMA,
-    WBTC_PLASMA,
+  [SupportedChainId.INK]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.INK],
+    USDC_INK,
+    WBTC_INK,
   ],
 }
 export const ADDITIONAL_BASES: { [chainId: number]: { [tokenAddress: string]: Token[] } } = {}
@@ -38,13 +38,13 @@ export const CUSTOM_BASES: { [chainId: number]: { [tokenAddress: string]: Token[
  * Shows up in the currency select for swap and add liquidity
  */
 export const COMMON_BASES: ChainCurrencyList = {
-  [SupportedChainId.PLASMA]: [
-    nativeOnChain(SupportedChainId.PLASMA),
-    USDC_PLASMA,
-    USDT_PLASMA,
-    WBTC_PLASMA,
+  [SupportedChainId.INK]: [
+    nativeOnChain(SupportedChainId.INK),
+    USDC_INK,
+    USDT_INK,
+    WBTC_INK,
   ],
-  [SupportedChainId.PLASMA_TANENBAUM]: [nativeOnChain(SupportedChainId.PLASMA_TANENBAUM)],
+  [SupportedChainId.INK_TANENBAUM]: [nativeOnChain(SupportedChainId.INK_TANENBAUM)],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

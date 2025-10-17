@@ -245,7 +245,7 @@ function parseRemoteActivity(assetActivity: AssetActivityPartsFragment): Activit
     )
     const defaultFields = {
       hash: assetActivity.transaction.hash,
-      chainId: ChainId.PLASMA, // fromGraphQLChain(assetActivity.chain),
+      chainId: ChainId.INK, // fromGraphQLChain(assetActivity.chain),
       status: assetActivity.transaction.status,
       timestamp: assetActivity.timestamp,
       logos: getLogoSrcs(changes),

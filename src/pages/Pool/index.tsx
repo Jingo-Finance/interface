@@ -268,7 +268,7 @@ export default function Pool() {
                     )}
                   />
                 )}
-                <ResponsiveButtonPrimary data-cy="join-pool-button" id="join-pool-button" as={Link} to="/add/XPL">
+                <ResponsiveButtonPrimary data-cy="join-pool-button" id="join-pool-button" as={Link} to="/add/ETH">
                   + <Trans>New Position</Trans>
                 </ResponsiveButtonPrimary>
                 <ResponsiveButtonPrimary

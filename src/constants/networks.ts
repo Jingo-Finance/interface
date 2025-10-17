@@ -11,13 +11,13 @@ import { SupportedChainId } from 'constants/chains'
  * These "Safe" URLs are listed first, followed by other fallback URLs, which are taken from chainlist.org.
  */
 export const FALLBACK_URLS = {
-  [SupportedChainId.PLASMA]: [
+  [SupportedChainId.INK]: [
     // "Safe" URLs
-    'https://rpc.plasma.com/',
+    'https://rpc-gel.inkonchain.com/',
   ],
-  [SupportedChainId.PLASMA_TANENBAUM]: [
+  [SupportedChainId.INK_TANENBAUM]: [
     // "Safe" URLs
-    'https://rpc-tanenbaum.plasma.com/',
+    'https://rpc-gel.inkonchain.com/',
   ],
 }
 
@@ -26,9 +26,9 @@ export const FALLBACK_URLS = {
  * These are the URLs used by the interface when there is not another available source of chain data.
  */
 export const RPC_URLS = {
-  [SupportedChainId.PLASMA]: [`https://rpc.plasma.com/`, ...FALLBACK_URLS[SupportedChainId.PLASMA]],
-  [SupportedChainId.PLASMA_TANENBAUM]: [
-    `https://rpc-tanenbaum.plasma.com/`,
-    ...FALLBACK_URLS[SupportedChainId.PLASMA_TANENBAUM],
+  [SupportedChainId.INK]: [`https://rpc-gel.inkonchain.com/`, ...FALLBACK_URLS[SupportedChainId.INK]],
+  [SupportedChainId.INK_TANENBAUM]: [
+    `https://rpc-gel.inkonchain.com/`,
+    ...FALLBACK_URLS[SupportedChainId.INK_TANENBAUM],
   ],
 }

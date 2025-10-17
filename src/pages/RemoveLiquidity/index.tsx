@@ -546,12 +546,12 @@ export default function RemoveLiquidity() {
                         ) : oneCurrencyIsWETH ? (
                           <StyledInternalLink
                             to={`/remove/v2/${
-                              currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA) ? 'XPL' : currencyIdA
+                              currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA) ? 'ETH' : currencyIdA
                             }/${
-                              currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB) ? 'XPL' : currencyIdB
+                              currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB) ? 'ETH' : currencyIdB
                             }`}
                           >
-                            Receive XPL
+                            Receive ETH
                           </StyledInternalLink>
                         ) : null}
                       </RowBetween>
