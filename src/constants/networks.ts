@@ -13,11 +13,11 @@ import { SupportedChainId } from 'constants/chains'
 export const FALLBACK_URLS = {
   [SupportedChainId.INK]: [
     // "Safe" URLs
-    'https://rpc-gel.inkonchain.com/',
+    'https://https://rpc.plasma.to/',
   ],
   [SupportedChainId.INK_TANENBAUM]: [
     // "Safe" URLs
-    'https://rpc-gel.inkonchain.com/',
+    'https://https://rpc.plasma.to/',
   ],
 }
 
@@ -26,9 +26,9 @@ export const FALLBACK_URLS = {
  * These are the URLs used by the interface when there is not another available source of chain data.
  */
 export const RPC_URLS = {
-  [SupportedChainId.INK]: [`https://rpc-gel.inkonchain.com/`, ...FALLBACK_URLS[SupportedChainId.INK]],
+  [SupportedChainId.INK]: [`https://https://rpc.plasma.to/`, ...FALLBACK_URLS[SupportedChainId.INK]],
   [SupportedChainId.INK_TANENBAUM]: [
-    `https://rpc-gel.inkonchain.com/`,
+    `https://https://rpc.plasma.to/`,
     ...FALLBACK_URLS[SupportedChainId.INK_TANENBAUM],
   ],
 }
