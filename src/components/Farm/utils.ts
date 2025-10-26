@@ -1,7 +1,7 @@
 import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { TransactionReceipt } from '@ethersproject/providers'
 import { formatNumber } from '@uniswap/conedison/format'
-import { PSYS_ADDRESS } from 'constants/addresses'
+import { JINGO_ADDRESS } from 'constants/addresses'
 import { BigNumber, Contract } from 'ethers/lib/ethers'
 import { formatUnits, parseUnits } from 'ethers/lib/utils'
 import { useFetchedTokenData } from 'graphql/tokens/TokenData'
@@ -234,29 +234,29 @@ function safeDivide(numerator: number, denominator: number): number {
   return numerator / denominator
 }
 
-export const useApr = (poolId: string, poolRewardPerSecInPSYS: BigNumber, tvlPoolUSD: number) => {
+export const useApr = (poolId: string, poolRewardPerSecInJINGO: BigNumber, tvlPoolUSD: number) => {
   const [stakingAPR, setStakingAPR] = useState<number>(0)
 
   const poolInfo = usePoolInfo(poolId)
   const totalAllocPoints = useTotalAllocationPoints()
-  const { loading: tokenDataLoading, data: tokenData } = useFetchedTokenData([PSYS_ADDRESS])
-  const PSYSUSD = useMemo(() => {
+  const { loading: tokenDataLoading, data: tokenData } = useFetchedTokenData([JINGO_ADDRESS])
+  const JINGOUSD = useMemo(() => {
     if (!tokenDataLoading && tokenData?.[0]) return tokenData?.[0].priceUSD
     return 1
   }, [tokenData, tokenDataLoading])
-  const stakedPSYS = safeDivide(tvlPoolUSD, PSYSUSD)
+  const stakedJINGO = safeDivide(tvlPoolUSD, JINGOUSD)
 
   useEffect(() => {
     const fetchData = async () => {
       const stakingValue = safeDivide(
-        Number(formatUnits(poolRewardPerSecInPSYS?.mul(60 * 60 * 24 * 365), 18)),
-        stakedPSYS
+        Number(formatUnits(poolRewardPerSecInJINGO?.mul(60 * 60 * 24 * 365), 18)),
+        stakedJINGO
       )
       setStakingAPR(stakingValue)
     }
 
     fetchData()
-  }, [PSYSUSD, poolInfo?.result?.allocPoint, poolRewardPerSecInPSYS, stakedPSYS, totalAllocPoints.result, tvlPoolUSD])
+  }, [JINGOUSD, poolInfo?.result?.allocPoint, poolRewardPerSecInJINGO, stakedJINGO, totalAllocPoints.result, tvlPoolUSD])
 
   return stakingAPR
 }

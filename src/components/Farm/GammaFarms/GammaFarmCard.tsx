@@ -187,9 +187,9 @@ export function GammaFarmCard({ data, rewardData, pairData, token0, token1 }: Ga
   }, [poolInfo.loading, poolInfo?.result])
 
   const totalAllocPointValue = totalAllocPoints?.result?.[0] || ONE_TOKEN
-  const poolRewardPerSecInPSYS = rewardPerSecondResult.mul(poolInfoResultAllocPoint).div(totalAllocPointValue)
+  const poolRewardPerSecInJINGO = rewardPerSecondResult.mul(poolInfoResultAllocPoint).div(totalAllocPointValue)
 
-  const apr = useApr(pairData?.pid, poolRewardPerSecInPSYS, rewardData?.tvl)
+  const apr = useApr(pairData?.pid, poolRewardPerSecInJINGO, rewardData?.tvl)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -210,7 +210,7 @@ export function GammaFarmCard({ data, rewardData, pairData, token0, token1 }: Ga
       : 0
   const token = useToken(rewardTokenAddress?.result?.toString())
 
-  const rewardsAmount = poolRewardPerSecInPSYS ? formatUnits(poolRewardPerSecInPSYS, 18) : '0'
+  const rewardsAmount = poolRewardPerSecInJINGO ? formatUnits(poolRewardPerSecInJINGO, 18) : '0'
 
   const getToken = (
     token:
