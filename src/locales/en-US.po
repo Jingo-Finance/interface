@@ -918,8 +918,8 @@ msgstr "Download in the App Store to safely store your tokens and NFTs, swap tok
 #~ msgstr "ETH Registrar Controller"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned PSYS tokens represent voting shares in Jingo governance."
-msgstr "Earned PSYS tokens represent voting shares in Jingo governance."
+msgid "Earned JINGO tokens represent voting shares in Jingo governance."
+msgstr "Earned JINGO tokens represent voting shares in Jingo governance."
 
 #: 
 #~ msgid "Earned UNI tokens represent voting shares in Uniswap governance."

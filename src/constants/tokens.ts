@@ -51,14 +51,14 @@ export const UNI: { [chainId: number]: Token } = {
     SupportedChainId.PLASMA,
     UNI_ADDRESS[SupportedChainId.PLASMA],
     18,
-    'PSYS',
+    'JINGO',
     'Jingo'
   ),
   [SupportedChainId.INK_TANENBAUM]: new Token(
     SupportedChainId.INK_TANENBAUM,
     UNI_ADDRESS[SupportedChainId.INK_TANENBAUM],
     18,
-    'PSYS',
+    'JINGO',
     'Jingo'
   ),
 }

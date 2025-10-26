@@ -89,7 +89,7 @@ export const SearchBarDropdown = ({ toggleOpen, tokens, queryText, hasInput, isL
 
   const totalSuggestions = hasInput ? tokens.length : Math.min(shortenedHistory.length, 2) + 3
 
-  // just want to get the tokens with PSYS and WSYS sybol.
+  // just want to get the tokens with JINGO and WSYS sybol.
   // const suggestions = tokens.
 
   // Navigate search results via arrow keys
@@ -119,7 +119,7 @@ export const SearchBarDropdown = ({ toggleOpen, tokens, queryText, hasInput, isL
     }
   }, [toggleOpen, hoveredIndex, totalSuggestions])
 
-  const suggestions = tokens.filter((token) => token.symbol === 'PSYS')
+  const suggestions = tokens.filter((token) => token.symbol === 'JINGO')
 
   useEffect(() => {
     const eventProperties = { total_suggestions: totalSuggestions, query_text: queryText }

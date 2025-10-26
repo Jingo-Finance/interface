@@ -99,7 +99,7 @@ export default function DelegateModal({ isOpen, onDismiss, title }: VoteModalPro
               <StyledClosed stroke="black" onClick={wrappedOnDismiss} />
             </RowBetween>
             <ThemedText.DeprecatedBody>
-              <Trans>Earned PSYS tokens represent voting shares in Jingo governance.</Trans>
+              <Trans>Earned JINGO tokens represent voting shares in Jingo governance.</Trans>
             </ThemedText.DeprecatedBody>
             <ThemedText.DeprecatedBody>
               <Trans>You can either vote on each proposal yourself or delegate your votes to a third party.</Trans>

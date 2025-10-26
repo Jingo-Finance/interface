@@ -10,7 +10,7 @@
 
 export const COMMON_CONTRACT_NAMES: Record<number, { [address: string]: string }> = {
   // [SupportedChainId.PLASMA]: {
-  //   [UNI_ADDRESS[SupportedChainId.PLASMA]]: 'PSYS',
+  //   [UNI_ADDRESS[SupportedChainId.PLASMA]]: 'JINGO',
   //   [TIMELOCK_ADDRESS[SupportedChainId.PLASMA]]: 'Timelock',
   //   [GOVERNANCE_ALPHA_V0_ADDRESSES[SupportedChainId.PLASMA]]: 'Governance (V0)',
   //   [GOVERNANCE_ALPHA_V1_ADDRESSES[SupportedChainId.PLASMA]]: 'Governance (V1)',
