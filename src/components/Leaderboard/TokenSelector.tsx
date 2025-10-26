@@ -148,7 +148,7 @@ const getTokenIcon = (token: TokenData, chainId: number) => {
 const TOKENS = [
   { symbol: 'All Tokens', name: '' },
   { symbol: 'PSYS', name: 'Jingo' },
-  { symbol: 'ETH', name: 'INK' },
+  { symbol: 'ETH', name: 'PLASMA' },
   { symbol: 'SUPR', name: 'SuperDapp' },
   { symbol: 'UNO', name: 'UnoRe' },
   { symbol: 'LUXY', name: 'LUXY' },

@@ -6,7 +6,7 @@ import { isAddress } from 'utils'
 import sysLogo from '../../assets/images/syslogo.png'
 import { NATIVE_CHAIN_ID } from '../../constants/tokens'
 
-type Network = 'ink' | 'rollux_tanenbaum'
+type Network = 'plasma' | 'rollux_tanenbaum'
 // eslint-disable-next-line import/no-unused-modules
 export function chainIdToNetworkName(networkId: SupportedChainId): Network {
   switch (networkId) {
@@ -14,8 +14,8 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
     // return 'ethereum'
     // case SupportedChainId.ARBITRUM_ONE:
     // return 'arbitrum'
-    case SupportedChainId.INK:
-      return 'ink'
+    case SupportedChainId.PLASMA:
+      return 'plasma'
     case SupportedChainId.INK_TANENBAUM:
       return 'rollux_tanenbaum'
     // case SupportedChainId.POLYGON:
@@ -23,13 +23,13 @@ export function chainIdToNetworkName(networkId: SupportedChainId): Network {
     // case SupportedChainId.BNB:
     // return 'smartchain'
     default:
-      return 'ink'
+      return 'plasma'
   }
 }
 
-export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.INK): string {
+export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.PLASMA): string {
   switch (chainId) {
-    case SupportedChainId.INK:
+    case SupportedChainId.PLASMA:
       return sysLogo
     default:
       return sysLogo
@@ -37,12 +37,12 @@ export function getNativeLogoURI(chainId: SupportedChainId = SupportedChainId.IN
 }
 
 // TODO: review token log with raw link
-function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.INK): string | void {
+function getTokenLogoURI(address: string, chainId: SupportedChainId = SupportedChainId.PLASMA): string | void {
   // const networkName = chainIdToNetworkName(chainId)
   // const networksWithUrls = [
   //   // SupportedChainId.ARBITRUM_ONE,
   //   // SupportedChainId.MAINNET,
-  //   SupportedChainId.INK,
+  //   SupportedChainId.PLASMA,
   //   SupportedChainId.INK_TANENBAUM,
   //   // SupportedChainId.BNB,
   // ]

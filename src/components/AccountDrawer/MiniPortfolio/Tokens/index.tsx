@@ -42,7 +42,7 @@ export default function Tokens({ account }: { account: string }) {
 
   const { tokens } = useNewTopTokens()
   const nativeBalances = useNativeCurrencyBalances([account])
-  const chainId = 570 //useWeb3React()
+  const chainId = 9745 //useWeb3React()
 
   const tokensAddress = tokens?.map((token) => token.id) || []
   const ERC20Tokens: Token[] = []
@@ -171,7 +171,7 @@ function TokenRow(portifolio: NonNullable<TokenDataOwner>) {
   const navigate = useNavigate()
   const toggleWalletDrawer = useToggleAccountDrawer()
   const navigateToTokenDetails = useCallback(async () => {
-    navigate(getTokenDetailsURL({ address: portifolio.token.address.toLowerCase(), chain: 'INK' as Chain }))
+    navigate(getTokenDetailsURL({ address: portifolio.token.address.toLowerCase(), chain: 'PLASMA' as Chain }))
     toggleWalletDrawer()
   }, [navigate, portifolio.token.address, toggleWalletDrawer])
 

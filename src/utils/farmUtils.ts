@@ -61,7 +61,7 @@ export function useUSDCPricesFromAddresses(addressArray: string[]) {
 }
 
 export function getTokenFromAddress(tokenAddress: string, tokenMap: TokenAddressMap, tokens: Token[]) {
-  const tokenIndex = Object.keys(tokenMap[ChainId.INK]).findIndex(
+  const tokenIndex = Object.keys(tokenMap[ChainId.PLASMA]).findIndex(
     (address) => address.toLowerCase() === tokenAddress.toLowerCase()
   )
 
@@ -69,7 +69,7 @@ export function getTokenFromAddress(tokenAddress: string, tokenMap: TokenAddress
     return tokens.find((item) => item.address.toLowerCase() === tokenAddress.toLowerCase())
   }
 
-  return Object.values(tokenMap[ChainId.INK])[tokenIndex]
+  return Object.values(tokenMap[ChainId.PLASMA])[tokenIndex]
 }
 
 // export function formatTokenAmount(amount?: TokenAmount | CurrencyAmount<Currency>, digits = 3) {
@@ -138,7 +138,7 @@ export function getAPYWithFee(rewards: number, fee: number) {
 //   if (!stakingInfo) return
 //   const stakingTokenPair = stakingInfo.stakingTokenPair
 //   const baseTokenCurrency = unwrappedToken(stakingInfo.baseToken as unknown as Currency)
-//   const empty = unwrappedToken(EMPTY[570])
+//   const empty = unwrappedToken(EMPTY[9745])
 //   const token0 = stakingInfo.tokens[0]
 //   const baseToken = baseTokenCurrency === empty ? token0 : stakingInfo.baseToken
 //   if (!stakingInfo.totalSupply || !stakingTokenPair || !stakingInfo.totalStakedAmount || !stakingInfo.stakedAmount)

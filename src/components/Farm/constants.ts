@@ -212,7 +212,7 @@ interface DynamicObject {
 export type InfoAddress = OwnerInfo & DynamicObject
 
 export const GammaPairs = {
-  [ChainId.INK]: {
+  [ChainId.PLASMA]: {
     '0x28c9c7fb3fe3104d2116af26cc8ef7905547349c-0x368433cac2a0b8d76e64681a9835502a1f2a8a30': [
       {
         type: Presets.GAMMA_NARROW,

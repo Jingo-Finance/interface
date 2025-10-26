@@ -328,7 +328,7 @@ export const LoadedRow = forwardRef((props: LoadedRowProps, ref: ForwardedRef<HT
     ? parseFloat(`${leaderboard.totalTokensTradeVolumeUSD}`).toFixed(2)
     : parseFloat(leaderboard.totalVolume).toFixed(2)
   const theme = useTheme()
-  const to = getExplorerLink(570, address, ExplorerDataType.ADDRESS)
+  const to = getExplorerLink(9745, address, ExplorerDataType.ADDRESS)
   return (
     <div ref={ref} data-testid={`leaderboard-table-row-${leaderboardListIndex}`}>
       <StyledLink to={to}>
@@ -351,7 +351,7 @@ export const LoadedRow = forwardRef((props: LoadedRowProps, ref: ForwardedRef<HT
 export function LoadedUserRow(props: LoadedUserRowProps) {
   const { leaderboardListIndex, leaderboardListLength, leaderboard, sortRank } = props
   const address = leaderboard.id
-  const to = getExplorerLink(570, address, ExplorerDataType.ADDRESS)
+  const to = getExplorerLink(9745, address, ExplorerDataType.ADDRESS)
   const trades = leaderboard.txCount
   const volumeUSDC = parseFloat(leaderboard.totalVolume).toFixed(2)
   const theme = useTheme()

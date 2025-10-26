@@ -51,21 +51,21 @@ type ChainInfoMap = { readonly [chainId: number]: L1ChainInfo | L2ChainInfo } & 
 } & { readonly [chainId in SupportedL1ChainId]: L1ChainInfo }
 
 const CHAIN_INFO: ChainInfoMap = {
-  [SupportedChainId.INK]: {
+  [SupportedChainId.PLASMA]: {
     networkType: NetworkType.L2,
     blockWaitMsBeforeWarning: ms`25m`,
     bridge: 'http://bridge.jingo.finance/',
     defaultListUrl: INK_LIST,
-    docs: 'https://www.inkonchain.com/',
-    explorer: 'https://explorer.inkonchain.com/',
+    docs: 'https://www.plasma.to/',
+    explorer: 'https://plasmascan.to/',
     infoLink: 'https://info.jingo.finance/#/',
     label: 'Rollux',
     logoUrl: rolluxLogoUrl,
     // Optimism perfers same icon for both
     circleLogoUrl: rolluxLogoUrl,
-    statusPage: 'https://www.inkonchain.com/',
+    statusPage: 'https://www.plasma.to/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'INK', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'PLASMA', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_570_background,
     backgroundColor: darkTheme.chain_570_background,
   },
@@ -74,14 +74,14 @@ const CHAIN_INFO: ChainInfoMap = {
     blockWaitMsBeforeWarning: ms`25m`,
     bridge: 'http://bridge.jingo.finance/',
     defaultListUrl: INK_LIST,
-    docs: 'https://www.inkonchain.com/',
-    explorer: 'https://explorer.inkonchain.com/',
+    docs: 'https://www.plasma.to/',
+    explorer: 'https://plasmascan.to/',
     infoLink: 'https://info.jingo.finance/#/',
-    label: 'INK Tanenbaum',
+    label: 'PLASMA Tanenbaum',
     logoUrl: rolluxTennenbalLogoUrl,
-    statusPage: 'https://www.inkonchain.com/',
+    statusPage: 'https://www.plasma.to/',
     helpCenterUrl: 'https://jingo.finance/',
-    nativeCurrency: { name: 'INK', symbol: 'ETH', decimals: 18 },
+    nativeCurrency: { name: 'PLASMA', symbol: 'ETH', decimals: 18 },
     color: darkTheme.chain_57000_background,
   },
 }
@@ -108,7 +108,7 @@ export function getChainInfo(chainId: any): any {
   return undefined
 }
 
-const MAINNET_INFO = CHAIN_INFO[SupportedChainId.INK]
+const MAINNET_INFO = CHAIN_INFO[SupportedChainId.PLASMA]
 export function getChainInfoOrDefault(chainId: number | undefined) {
   return getChainInfo(chainId) ?? MAINNET_INFO
 }

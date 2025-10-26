@@ -142,7 +142,7 @@ export const AddressCell = ({ address, desktopLBreakpoint, chainId }: AddressCel
       className={styles.addressCell}
     >
       <AddressLink
-        href={getExplorerLink(chainId ?? ChainId.INK, address ?? '', ExplorerDataType.ADDRESS)}
+        href={getExplorerLink(chainId ?? ChainId.PLASMA, address ?? '', ExplorerDataType.ADDRESS)}
         style={{ textDecoration: 'none' }}
       >
         <Box onClick={(e) => e.stopPropagation()}>{address ? shortenAddress(address, 2, 4) : '-'}</Box>

@@ -10,24 +10,24 @@ type AddressMap = { [chainId: number]: string }
 export const PSYS_ADDRESS = '0x48023b16c3e81aa7f6effbdeb35bb83f4f31a8fd'
 export const UNI_ADDRESS: AddressMap = {
   [SupportedChainId.INK_TANENBAUM]: '0x817C777DEf2Fd6ffE2492C6CD124985C78Ee9235',
-  [SupportedChainId.INK]: '0x48023b16c3e81AA7F6eFFbdEB35Bb83f4f31a8fd',
+  [SupportedChainId.PLASMA]: '0x48023b16c3e81AA7F6eFFbdEB35Bb83f4f31a8fd',
 }
 
 export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26197C432AFe78'
 
 // export const V2_FACTORY_ADDRESSES: AddressMap = {
 //   [SupportedChainId.INK_TANENBAUM]: V2_FACTORY_ADDRESS,
-//   [SupportedChainId.INK]: '0x14264CD8fb5F95d551C20E07C738a9281737290c',
+//   [SupportedChainId.PLASMA]: '0x14264CD8fb5F95d551C20E07C738a9281737290c',
 // }
 
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [SupportedChainId.INK_TANENBAUM]: V2_FACTORY_ADDRESS[SupportedChainId.INK_TANENBAUM],
-  [SupportedChainId.INK]: V2_FACTORY_ADDRESS[SupportedChainId.INK],
+  [SupportedChainId.PLASMA]: V2_FACTORY_ADDRESS[SupportedChainId.PLASMA],
 }
 
 export const V2_ROUTER_ADDRESS: AddressMap = {
   [SupportedChainId.INK_TANENBAUM]: '0x29f7Ad37EC018a9eA97D4b3fEebc573b5635fA84',
-  [SupportedChainId.INK]: '0x71Eb84560C40094D248DD3542A479A2F0D17DB52',
+  [SupportedChainId.PLASMA]: '0x71Eb84560C40094D248DD3542A479A2F0D17DB52',
 }
 
 /* V3 Contract Addresses */
@@ -88,13 +88,13 @@ export const GAMMA_UNIPROXY_ADDRESSES: AddressMap = {
 }
 
 // const EMPTY: { [chainId: number]: Token } = {
-//   [ChainId.INK]: new Token(ChainId.INK, '0x0000000000000000000000000000000000000000', 0, 'EMPTY', 'EMPTY'),
+//   [ChainId.PLASMA]: new Token(ChainId.PLASMA, '0x0000000000000000000000000000000000000000', 0, 'EMPTY', 'EMPTY'),
 // }
 
 // const FINITE_FARMING: AddressMap = {
-//   [ChainId.INK]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
+//   [ChainId.PLASMA]: '0x9923f42a02A82dA63EE0DbbC5f8E311e3DD8A1f8',
 // }
 
 // const FARMING_CENTER: AddressMap = {
-//   [ChainId.INK]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
+//   [ChainId.PLASMA]: '0x7F281A8cdF66eF5e9db8434Ec6D97acc1bc01E78',
 // }

@@ -21,8 +21,8 @@ const WRAPPED_NATIVE_CURRENCIES_ONLY: ChainTokenList = Object.fromEntries(
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WRAPPED_NATIVE_CURRENCIES_ONLY,
-  [SupportedChainId.INK]: [
-    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.INK],
+  [SupportedChainId.PLASMA]: [
+    ...WRAPPED_NATIVE_CURRENCIES_ONLY[SupportedChainId.PLASMA],
     USDC_INK,
     WBTC_INK,
   ],
@@ -38,8 +38,8 @@ export const CUSTOM_BASES: { [chainId: number]: { [tokenAddress: string]: Token[
  * Shows up in the currency select for swap and add liquidity
  */
 export const COMMON_BASES: ChainCurrencyList = {
-  [SupportedChainId.INK]: [
-    nativeOnChain(SupportedChainId.INK),
+  [SupportedChainId.PLASMA]: [
+    nativeOnChain(SupportedChainId.PLASMA),
     USDC_INK,
     USDT_INK,
     WBTC_INK,

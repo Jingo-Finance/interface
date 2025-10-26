@@ -48,7 +48,7 @@ function onError(error: Error) {
 }
 
 const [web3Network, web3NetworkHooks] = initializeConnector<Network>(
-  (actions) => new Network({ actions, urlMap: RPC_PROVIDERS, defaultChainId: ChainId.INK })
+  (actions) => new Network({ actions, urlMap: RPC_PROVIDERS, defaultChainId: ChainId.PLASMA })
 )
 export const networkConnection: Connection = {
   getName: () => 'Network',
@@ -107,7 +107,7 @@ export const gnosisSafeConnection: Connection = {
 }
 
 export const walletConnectV2Connection: Connection = new (class implements Connection {
-  private initializer = (actions: Actions, defaultChainId = ChainId.INK) =>
+  private initializer = (actions: Actions, defaultChainId = ChainId.PLASMA) =>
     new WalletConnectV2({ actions, defaultChainId, onError })
 
   type = ConnectionType.WALLET_CONNECT_V2
@@ -196,7 +196,7 @@ const [web3CoinbaseWallet, web3CoinbaseWalletHooks] = initializeConnector<Coinba
     new CoinbaseWallet({
       actions,
       options: {
-        url: RPC_URLS[SupportedChainId.INK][0],
+        url: RPC_URLS[SupportedChainId.PLASMA][0],
         appName: 'Uniswap',
         appLogoUrl: UNISWAP_LOGO,
         reloadOnDisconnect: false,

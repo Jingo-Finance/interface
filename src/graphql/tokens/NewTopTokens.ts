@@ -62,7 +62,7 @@ export function useNewTopTokens(): {
     if (!data) return undefined
 
     const unwrappedTokens = data?.tokens.map((token) => {
-      return unwrapTokenRollux(SupportedChainId.INK, token)
+      return unwrapTokenRollux(SupportedChainId.PLASMA, token)
     })
 
     return unwrappedTokens

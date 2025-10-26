@@ -57,7 +57,7 @@ export default function RadialGradientByChainUpdater(): null {
       //   backgroundRadialGradientElement.style.background = darkMode ? arbitrumDarkGradient : arbitrumLightGradient
       //   break
       // }
-      case SupportedChainId.INK:
+      case SupportedChainId.PLASMA:
       case SupportedChainId.INK_TANENBAUM: {
         setBackground(backgroundResetStyles)
         const optimismLightGradient =

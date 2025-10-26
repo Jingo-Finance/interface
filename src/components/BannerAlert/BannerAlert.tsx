@@ -28,7 +28,7 @@ const RootWrapper = styled.div`
 `
 
 const SHOULD_SHOW_ALERT = {
-  [SupportedChainId.INK]: true,
+  [SupportedChainId.PLASMA]: true,
   [SupportedChainId.INK_TANENBAUM]: true,
 }
 
@@ -38,13 +38,13 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
   [darkMode in 'dark' | 'light']: { [chainId in NetworkAlertChains]: string }
 } = {
   dark: {
-    [SupportedChainId.INK]:
+    [SupportedChainId.PLASMA]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
     [SupportedChainId.INK_TANENBAUM]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
   },
   light: {
-    [SupportedChainId.INK]:
+    [SupportedChainId.PLASMA]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
     [SupportedChainId.INK_TANENBAUM]:
       'radial-gradient(182.71% 150.59% at 2.81% 7.69%, rgba(240, 185, 11, 0.16) 0%, rgba(255, 168, 0, 0.16) 100%)',
@@ -98,7 +98,7 @@ const StyledArrowUpRight = styled(ArrowUpRight)`
 `
 
 const TEXT_COLORS: { [chainId in NetworkAlertChains]: string } = {
-  [SupportedChainId.INK]: 'rgb(255 130 0)',
+  [SupportedChainId.PLASMA]: 'rgb(255 130 0)',
   [SupportedChainId.INK_TANENBAUM]: 'rgb(255 130 0)',
 }
 
@@ -114,7 +114,7 @@ export function BannerAlert() {
     return null
   }
 
-  const isRolluxChain = SupportedChainId.INK || SupportedChainId.INK_TANENBAUM
+  const isRolluxChain = SupportedChainId.PLASMA || SupportedChainId.INK_TANENBAUM
   const chainInfo = getChainInfo(chainId)
   if (!chainInfo) return null
 
@@ -127,7 +127,7 @@ export function BannerAlert() {
         darkMode={darkMode}
         logoUrl="https://images.squarespace-cdn.com/content/v1/638a48377c09bb00bbc62b94/019e9ada-f799-47ec-b429-c4b6c5f426ec/coinify_logomark_orange.png?format=1500w"
       >
-        <LinkOutToBridge href="https://trade.coinify.com/INK?cryptoCurrencies=SYSINK,SYSEVM,ETH&defaultCryptoCurrency=SYSINK&targetPage=buy">
+        <LinkOutToBridge href="https://trade.coinify.com/PLASMA?cryptoCurrencies=SYSINK,SYSEVM,ETH&defaultCryptoCurrency=SYSINK&targetPage=buy">
           <BodyText color={isRolluxChain ? (darkMode ? textColor : black) : textColor}>
             <L2Icon src="https://images.squarespace-cdn.com/content/v1/638a48377c09bb00bbc62b94/019e9ada-f799-47ec-b429-c4b6c5f426ec/coinify_logomark_orange.png?format=1500w" />
             <AutoRow>
@@ -135,7 +135,7 @@ export function BannerAlert() {
                 <Trans>Buy $ETH on Coinify</Trans>
               </Header>
               <HideSmall>
-                <Trans>With a few clicks you can acquire $ETH on INK Network</Trans>
+                <Trans>With a few clicks you can acquire $ETH on PLASMA Network</Trans>
               </HideSmall>
             </AutoRow>
           </BodyText>
